@@ -76,36 +76,36 @@ const boho: MotionProfile = {
   kenBurns: { fromScale: 1.08, duration: 8 },
 };
 
-const forest: MotionProfile = {
-  fadeUp: makeFade(12, 0.9),
-  sectionReveal: makeFade(16, 1),
-  staggerItem: makeFade(14, 0.85),
-  scaleItem: makeScale(0.98, 0.9),
+const love: MotionProfile = {
+  fadeUp: makeFade(16, 0.85),
+  sectionReveal: makeFade(22, 0.95),
+  staggerItem: makeFade(18, 0.8),
+  scaleItem: makeScale(0.97, 0.85),
   heroWord: {
-    hidden: { opacity: 0, y: 20, filter: "blur(2px)" },
+    hidden: { opacity: 0, y: 28, filter: "blur(3px)" },
     show: {
       opacity: 1,
       y: 0,
       filter: "blur(0px)",
-      transition: { duration: 1, ease },
+      transition: { duration: 0.9, ease },
     },
   },
   heroWordContainer: {
     hidden: {},
     show: {
-      transition: { staggerChildren: 0.08, delayChildren: 0.2 },
+      transition: { staggerChildren: 0.07, delayChildren: 0.22 },
     },
   },
   hoverLift: {
-    y: -4,
+    y: -5,
     filter:
-      "drop-shadow(0 8px 18px rgba(31, 77, 54, 0.16)) drop-shadow(0 0 20px rgba(79, 122, 90, 0.1))",
+      "drop-shadow(0 8px 18px rgba(114, 32, 21, 0.18)) drop-shadow(0 0 22px rgba(143, 46, 28, 0.12))",
   },
   hoverGlow: {
     scale: 1.03,
-    boxShadow: "0 0 18px rgba(31, 77, 54, 0.28), 0 0 32px rgba(79, 122, 90, 0.16)",
+    boxShadow: "0 0 18px rgba(114, 32, 21, 0.32), 0 0 36px rgba(143, 46, 28, 0.18)",
   },
-  kenBurns: { fromScale: 1.04, duration: 16 },
+  kenBurns: { fromScale: 1.05, duration: 14 },
 };
 
 const noirGold: MotionProfile = {
@@ -143,7 +143,7 @@ const noirGold: MotionProfile = {
 
 const profiles: Record<ThemePresetId, MotionProfile> = {
   boho,
-  forest,
+  love,
   noirGold,
 };
 

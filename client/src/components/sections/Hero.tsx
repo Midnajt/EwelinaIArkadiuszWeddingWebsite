@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { images } from "@/config/assets";
 import { site } from "@/config/site";
 import { getMotionProfile } from "@/lib/motion";
+import { useHeroPhoto } from "@/lib/hero-photo-provider";
 import { useTheme } from "@/lib/theme-provider";
 import { cn } from "@/lib/utils";
 import { getWeddingDateState } from "@/lib/wedding-date";
@@ -10,11 +11,12 @@ import { getWeddingDateState } from "@/lib/wedding-date";
 export function Hero() {
   const { t } = useTranslation();
   const reduce = useReducedMotion();
-  const { preset, presetId } = useTheme();
+  const { presetId } = useTheme();
+  const { photoId, photo } = useHeroPhoto();
   const motionProfile = getMotionProfile(presetId);
   const words = site.name.split(" ");
-  const glass = preset.surface === "glass";
   const { phase } = getWeddingDateState(site.weddingDate);
+  const boho = presetId === "boho";
   // CTA w hero wyłączone (Niezbędnik, RSVP, plan dnia)
   // const primaryAction =
   //   phase === "after"
@@ -25,29 +27,24 @@ export function Hero() {
   return (
     <section className="relative min-h-[88vh] overflow-hidden">
       <motion.div
-        key={presetId}
+        key={`${presetId}-${photoId}`}
         className="absolute inset-0 z-0"
         initial={reduce ? false : { scale: motionProfile.kenBurns.fromScale }}
         animate={{ scale: 1 }}
         transition={{ duration: motionProfile.kenBurns.duration, ease: "linear" }}
       >
         <img
-          src={images.hero}
-          alt={t("photos.hero")}
-          className="absolute inset-0 size-full object-cover object-[center_40%]"
+          src={photo.src}
+          alt={t(photo.altKey)}
+          className="absolute inset-0 size-full object-cover"
+          style={{ objectPosition: photo.objectPosition ?? "center 40%" }}
         />
         <div className="absolute inset-0" style={{ backgroundColor: "var(--hero-overlay)" }} />
         <div className="absolute inset-0 opacity-25" style={{ background: "var(--hero-glow)" }} />
       </motion.div>
 
       <div className="relative z-10 mx-auto flex min-h-[88vh] max-w-6xl flex-col items-center justify-center px-4 py-24 text-center text-white sm:px-6">
-        <div
-          className={cn(
-            "hero-panel flex max-w-3xl flex-col items-center",
-            glass &&
-              "rounded-2xl border border-primary/35 bg-background/25 px-6 py-10 shadow-[0_0_48px_rgba(201,162,39,0.18)] backdrop-blur-xl sm:px-12",
-          )}
-        >
+        <div className="hero-panel flex max-w-3xl flex-col items-center">
           <motion.p
             className="text-sm font-medium tracking-[0.35em] uppercase text-white/85"
             initial={reduce ? false : { opacity: 0, y: -16 }}
@@ -92,9 +89,12 @@ export function Hero() {
             transition={{ delay: 1 }}
           >
             <img
-              src={images.logoGold}
+              src={boho ? images.ornament : images.logoGold}
               alt=""
-              className="mx-auto mt-8 h-20 w-auto max-w-[min(100%,16rem)] object-contain mix-blend-screen md:h-28"
+              className={cn(
+                "mx-auto mt-8 h-20 w-auto max-w-[min(100%,16rem)] object-contain md:h-28",
+                boho ? "invert" : "mix-blend-screen",
+              )}
             />
           </motion.div>
 

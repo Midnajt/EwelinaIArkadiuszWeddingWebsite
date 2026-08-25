@@ -26,7 +26,8 @@ export function LegalLayout({
           </a>
         </p>
         <p className="text-muted-foreground mt-6 text-xs">
-          {site.legalName} · {site.email}
+          {site.legalName} · {site.url.replace(/^https?:\/\//, "")} · {site.contacts.bride.phone} /{" "}
+          {site.contacts.groom.phone}
         </p>
       </Container>
     </main>
@@ -35,24 +36,38 @@ export function LegalLayout({
 
 export function RodoPage() {
   const { t } = useTranslation();
+  const host = site.url.replace(/^https?:\/\//, "");
+
   return (
     <LegalLayout title={t("legal.rodoTitle")}>
       <p>
-        Administratorem danych osobowych na tej stronie jest {site.legalName},
-        e-mail: {site.email}, tel. {site.phone}. Dane świadków na stronie są poglądowe
-        i służą układowi sekcji kontaktowej.
+        Administratorem danych osobowych przetwarzanych w związku z serwisem{" "}
+        <a className="underline" href={site.url}>
+          {host}
+        </a>{" "}
+        ({site.legalName}) są {site.couple.bride} i {site.couple.groom}. Kontakt: tel. {site.contacts.bride.phone} ({site.couple.bride}), tel.{" "}
+        {site.contacts.groom.phone} ({site.couple.groom}), e-mail:{" "}
+        <a className="underline" href={site.contacts.bride.emailHref}>
+          {site.contacts.bride.email}
+        </a>
+        ,{" "}
+        <a className="underline" href={site.contacts.groom.emailHref}>
+          {site.contacts.groom.email}
+        </a>
+        .
       </p>
       <p>
-        Jeśli gość wypełni formularz potwierdzenia obecności, zgłoszenie zapisuje się wyłącznie w localStorage
-        przeglądarki (imię, obecność, dieta, dzieci, bus, nocleg, uwaga). Nie wysyłamy danych na
-        serwer. Podstawą jest zgoda (art. 6 ust. 1 lit. a RODO) oraz uzasadniony interes pokazania
-        działania modułu (lit. f) w ramach demo.
+        Serwis informuje gości o ślubie i weselu. Nie zbieramy danych przez formularze ani nie
+        wysyłamy ich na serwer. W przeglądarce mogą być zapisane wyłącznie niezbędne dane lokalne:
+        zgoda na pliki cookies, wybrany język, wybrany motyw oraz zdjęcie w nagłówku. Podstawą jest zgoda (art. 6 ust. 1
+        lit. a RODO) oraz uzasadniony interes administratora polegający na prowadzeniu strony
+        informacyjnej o uroczystości (lit. f).
       </p>
       <p>
-        Dane nie są sprzedawane. Hosting (GitHub Pages) może przetwarzać logi techniczne. Przysługuje
-        Państwu prawo dostępu, sprostowania, usunięcia, ograniczenia, przenoszenia, sprzeciwu oraz
-        skargi do Prezesa UODO. Zgłoszenie obecności można skasować, czyszcząc dane strony w przeglądarce
-        albo klikając „wyślij kolejne zgłoszenie”.
+        Dane nie są sprzedawane. Dostawca hostingu domeny {host} może przetwarzać standardowe logi
+        techniczne (np. adres IP, data żądania). Przysługuje Państwu prawo dostępu, sprostowania,
+        usunięcia, ograniczenia, przenoszenia, sprzeciwu oraz skargi do Prezesa UODO. Zgodę i dane
+        lokalne można usunąć, czyszcząc dane witryny w przeglądarce.
       </p>
       <p>
         Szczegóły znajdują się w{" "}
@@ -67,20 +82,27 @@ export function RodoPage() {
 
 export function PrivacyPage() {
   const { t } = useTranslation();
+  const host = site.url.replace(/^https?:\/\//, "");
+
   return (
     <LegalLayout title={t("legal.privacyTitle")}>
       <p>
-        Strona {site.name} wykorzystuje niezbędne pliki cookies do zapamiętania zgody na baner oraz
-        wybranego języka (PL/EN). Nie ładujemy narzędzi analitycznych przed akceptacją banera. Tryb
-        ciemny jest wyłączony.
+        Serwis{" "}
+        <a className="underline" href={site.url}>
+          {host}
+        </a>{" "}
+        ({site.name}) wykorzystuje wyłącznie niezbędne pliki cookies: zapamiętanie zgody na baner,
+        wybranego języka (PL/EN), motywu kolorystycznego oraz zdjęcia w nagłówku. Nie ładujemy narzędzi analitycznych
+        ani reklamowych.
       </p>
       <p>
-        Formularz potwierdzenia obecności nie wysyła danych pocztą ani API — kopia zostaje w przeglądarce gościa.
-        Wiadomości e-mail z księgi gości trafiają na adres demonstracyjny {site.email}.
+        Nie zbieramy formularzy RSVP ani wpisów księgi gości na serwerze. Kontakt z parą młodą
+        odbywa się telefonicznie lub e-mailem, przez dane podane w sekcji Kontakt.
       </p>
       <p>
-        Kontakt w sprawie danych: {site.email}. Ten dokument jest szablonem pod prezentację i wymaga
-        dostosowania, zanim strona zostanie opublikowana dla prawdziwej pary.
+        Kontakt w sprawie danych: {site.couple.bride} {site.contacts.bride.phone},{" "}
+        {site.contacts.bride.email}; {site.couple.groom} {site.contacts.groom.phone},{" "}
+        {site.contacts.groom.email}. Niniejsza polityka dotyczy wyłącznie serwisu {host}.
       </p>
     </LegalLayout>
   );

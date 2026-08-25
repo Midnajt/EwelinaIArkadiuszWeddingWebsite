@@ -1,5 +1,7 @@
 import demoHero from "../../assets/5F4A6221.jpg?url";
 import hero from "../../assets/hero.png?url";
+import beach from "../../assets/beach.png?url";
+import restaurant from "../../assets/restaurant.png?url";
 import logoGold from "../../assets/logo_gold.png?url";
 import intimate from "../../assets/5F4A5869.jpg?url";
 import brideSmile from "../../assets/5F4A5971.jpg?url";
@@ -20,6 +22,8 @@ export type PhotoItem = {
 
 export const images = {
   hero,
+  beach,
+  restaurant,
   logoGold,
   ornament,
   story: [
@@ -28,9 +32,9 @@ export const images = {
     { src: brideSmile, altKey: "photos.brideSmile" },
   ] as const satisfies readonly PhotoItem[],
   slider: [
-    { src: churchExit, altKey: "photos.churchExit", objectPosition: "center 18%" },
-    { src: ceremony, altKey: "photos.ceremony", objectPosition: "center 22%" },
-    { src: firstDance, altKey: "photos.firstDance", objectPosition: "center 28%" },
+    { src: beach, altKey: "photos.beach", objectPosition: "center 42%" },
+    { src: hero, altKey: "photos.hero", objectPosition: "center 48%" },
+    { src: restaurant, altKey: "photos.restaurant", objectPosition: "center 40%" },
   ] as const satisfies readonly PhotoItem[],
   gallery: [
     { src: demoHero, altKey: "photos.hero" },

@@ -1,7 +1,7 @@
 export type HeroLayout = "fullscreen" | "split" | "editorial";
 export type SectionDensity = "comfortable" | "compact" | "airy";
 export type ThemeSurface = "solid" | "glass";
-export type ThemePresetId = "boho" | "forest" | "noirGold";
+export type ThemePresetId = "boho" | "love" | "noirGold";
 
 export type ThemeTokens = {
   radius: string;
@@ -70,33 +70,34 @@ const bohoLight: ThemeTokens = {
     "radial-gradient(80% 50% at 50% -10%, rgba(255, 214, 170, 0.55) 0%, transparent 70%)",
 };
 
-const forestLight: ThemeTokens = {
-  radius: "0.5rem",
-  headingFont: '"Libre Baskerville", serif',
-  bodyFont: '"Figtree", sans-serif',
+/** Burgundy sampled from the glazed plates in restaurant.png. */
+const loveLight: ThemeTokens = {
+  radius: "0.85rem",
+  headingFont: '"Playfair Display", serif',
+  bodyFont: '"Source Sans 3", sans-serif',
   googleFontsHref:
-    "https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap",
-  background: "#F7FAF6",
-  foreground: "#1A2E1C",
-  card: "#FFFFFF",
-  cardForeground: "#1A2E1C",
-  popover: "#FFFFFF",
-  popoverForeground: "#1A2E1C",
-  primary: "#1F4D36",
-  primaryForeground: "#F7FAF6",
-  secondary: "#E8F0E9",
-  secondaryForeground: "#1A2E1C",
-  muted: "#EEF4EF",
-  mutedForeground: "#4A6B54",
-  accent: "#4F7A5A",
-  accentForeground: "#F7FAF6",
-  destructive: "#9B3D2E",
-  border: "#D4E4D7",
-  input: "#D4E4D7",
-  ring: "#1F4D36",
-  heroOverlay: "rgba(31, 77, 54, 0.48)",
+    "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+  background: "#FBF6F3",
+  foreground: "#3A0A08",
+  card: "#FFFCFB",
+  cardForeground: "#3A0A08",
+  popover: "#FFFCFB",
+  popoverForeground: "#3A0A08",
+  primary: "#722015",
+  primaryForeground: "#FFF8F5",
+  secondary: "#F4E6E2",
+  secondaryForeground: "#3A0A08",
+  muted: "#F7ECE9",
+  mutedForeground: "#8D5C55",
+  accent: "#8F2E1C",
+  accentForeground: "#FFF8F5",
+  destructive: "#9B2C23",
+  border: "#EAD5D0",
+  input: "#EAD5D0",
+  ring: "#722015",
+  heroOverlay: "rgba(58, 10, 8, 0.52)",
   heroGlow:
-    "radial-gradient(80% 50% at 50% -10%, rgba(180, 220, 190, 0.4) 0%, transparent 70%)",
+    "radial-gradient(80% 50% at 50% -10%, rgba(114, 32, 21, 0.48) 0%, transparent 70%)",
 };
 
 const noirGoldLight: ThemeTokens = {
@@ -140,14 +141,14 @@ export const themePresets: ThemePreset[] = [
     dark: { ...bohoLight },
   },
   {
-    id: "forest",
-    namePl: "Las",
-    nameEn: "Forest",
+    id: "love",
+    namePl: "Love",
+    nameEn: "Love",
     heroLayout: "fullscreen",
     density: "comfortable",
     surface: "solid",
-    light: forestLight,
-    dark: { ...forestLight },
+    light: loveLight,
+    dark: { ...loveLight },
   },
   {
     id: "noirGold",
@@ -166,6 +167,13 @@ export const THEME_STORAGE_KEY = "wedding-theme";
 
 export function isThemePresetId(value: string | null): value is ThemePresetId {
   return themePresets.some((preset) => preset.id === value);
+}
+
+/** Maps the retired Forest id so stored themes keep working. */
+export function resolvePresetId(value: string | null): ThemePresetId {
+  if (value === "forest") return "love";
+  if (isThemePresetId(value)) return value;
+  return defaultPresetId;
 }
 
 export function getPreset(id: ThemePresetId): ThemePreset {

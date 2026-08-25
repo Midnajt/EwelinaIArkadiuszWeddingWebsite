@@ -11,7 +11,7 @@ import {
   THEME_STORAGE_KEY,
   defaultPresetId,
   getPreset,
-  isThemePresetId,
+  resolvePresetId,
   type ThemePreset,
   type ThemePresetId,
 } from "@/config/theme";
@@ -31,7 +31,11 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 function readStoredPreset(): ThemePresetId {
   try {
     const stored = localStorage.getItem(THEME_STORAGE_KEY);
-    if (isThemePresetId(stored)) return stored;
+    const id = resolvePresetId(stored);
+    if (stored === "forest") {
+      localStorage.setItem(THEME_STORAGE_KEY, id);
+    }
+    return id;
   } catch {
     /* private mode / blocked storage */
   }

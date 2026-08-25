@@ -19,22 +19,22 @@ export const site = {
   },
   phone: "504 964 802",
   phoneHref: "tel:+48504964802",
-  email: "ewelina@example.pl",
-  emailHref: "mailto:ewelina@example.pl",
+  email: "Ewelina.Scibor@op.pl",
+  emailHref: "mailto:Ewelina.Scibor@op.pl",
   contacts: {
     bride: {
       name: "Ewelina",
       phone: "504 964 802",
       phoneHref: "tel:+48504964802",
-      email: "ewelina@example.pl",
-      emailHref: "mailto:ewelina@example.pl",
+      email: "Ewelina.Scibor@op.pl",
+      emailHref: "mailto:Ewelina.Scibor@op.pl",
     },
     groom: {
       name: "Arkadiusz",
       phone: "502 811 680",
       phoneHref: "tel:+48502811680",
-      email: "arkadiusz@example.pl",
-      emailHref: "mailto:arkadiusz@example.pl",
+      email: "Arkadiusz.Strzezek@strzezek.com",
+      emailHref: "mailto:Arkadiusz.Strzezek@strzezek.com",
     },
   },
   ceremony: {

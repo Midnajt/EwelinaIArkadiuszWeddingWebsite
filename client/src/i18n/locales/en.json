@@ -89,7 +89,7 @@
   },
   "slider": {
     "title": "Favourite moments",
-    "subtitle": "The ceremony, leaving the church, and the first dance."
+    "subtitle": "Sunset on the beach, an evening in Paris, and dinner for two."
   },
   "schedule": {
     "kicker": "Schedule",
@@ -302,6 +302,8 @@
   },
   "photos": {
     "hero": "Ewelina and Arkadiusz at night in Paris, the Eiffel Tower behind them",
+    "beach": "Ewelina and Arkadiusz on the beach at sunset",
+    "restaurant": "Ewelina and Arkadiusz at a restaurant dinner",
     "intimate": "Close-up of the couple, foreheads together",
     "brideSmile": "The bride smiling over the groom’s shoulder",
     "hands": "Joined hands and a wedding ring",
@@ -317,16 +319,16 @@
     "createdBy": "Website by",
     "privacy": "Privacy policy",
     "rodo": "GDPR notice",
-    "demo": "This is a demonstration site for client presentations."
+    "demo": "The wedding website of Ewelina and Arkadiusz — ewelinaiarkadiusz.pl."
   },
   "cookies": {
     "title": "Cookie and data-processing consent",
-    "text": "We use essential cookies (language, consent) and — if you fill in the attendance form — store the reply locally in your browser. Details are in the GDPR notice and privacy policy.",
+    "text": "On ewelinaiarkadiusz.pl we use essential cookies only: banner consent, language (PL/EN), the selected theme and the header photo. Details are in the GDPR notice and privacy policy.",
     "accept": "Accept",
     "checkbox": "I agree to cookies and to personal-data processing for the purposes described in the GDPR notice and privacy policy."
   },
   "legal": {
-    "disclaimer": "This is a demonstration (portfolio) site. The legal copy is a sample and needs review before publishing for a real couple.",
+    "disclaimer": "This notice applies to ewelinaiarkadiusz.pl — the wedding website of Ewelina and Arkadiusz.",
     "back": "Back to home",
     "rodoTitle": "GDPR notice",
     "privacyTitle": "Privacy policy"
@@ -334,7 +336,12 @@
   "theme": {
     "lang": "Language",
     "bar": "Choose a theme",
-    "change": "Change theme:"
+    "change": "Change theme:",
+    "photoBar": "Choose a header photo",
+    "choosePhoto": "Choose photo:",
+    "photoBeach": "Beach",
+    "photoParis": "Paris",
+    "photoRestaurant": "Restaurant"
   },
   "common": {
     "skip": "Skip to content"

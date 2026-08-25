@@ -87,6 +87,18 @@
   }
 }
 
+html[data-theme="love"] {
+  background-color: #fbf6f3;
+  background-image:
+    radial-gradient(58% 42% at 8% 0%, rgba(114, 32, 21, 0.08), transparent 58%),
+    radial-gradient(48% 40% at 92% 100%, rgba(143, 46, 28, 0.06), transparent 62%);
+  background-attachment: fixed;
+}
+
+html[data-theme="love"] body {
+  background-color: transparent;
+}
+
 html[data-theme="noirGold"] {
   color-scheme: dark;
   --gold-metallic: linear-gradient(105deg, #e8d48a 0%, #c9a227 52%, #8b6914 100%);

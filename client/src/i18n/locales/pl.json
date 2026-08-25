@@ -89,7 +89,7 @@
   },
   "slider": {
     "title": "Najlepsze wspólne chwile",
-    "subtitle": "Ceremonia, wyjście z kościoła i pierwszy taniec."
+    "subtitle": "Zachód słońca na plaży, wieczór w Paryżu i kolacja we dwoje."
   },
   "schedule": {
     "kicker": "Harmonogram",
@@ -302,6 +302,8 @@
   },
   "photos": {
     "hero": "Ewelina i Arkadiusz wieczorem w Paryżu, wieża Eiffla w tle",
+    "beach": "Ewelina i Arkadiusz na plaży o zachodzie słońca",
+    "restaurant": "Ewelina i Arkadiusz podczas kolacji w restauracji",
     "intimate": "Zbliżenie pary, czoła przy sobie",
     "brideSmile": "Panna młoda uśmiecha się przez ramię pana młodego",
     "hands": "Splecione dłonie pary i obrączka",
@@ -317,16 +319,16 @@
     "createdBy": "Strona stworzona przez",
     "privacy": "Polityka prywatności",
     "rodo": "RODO",
-    "demo": "To strona demonstracyjna na potrzeby prezentacji."
+    "demo": "Strona ślubna Eweliny i Arkadiusza — ewelinaiarkadiusz.pl."
   },
   "cookies": {
     "title": "Zgoda na pliki cookies i przetwarzanie danych",
-    "text": "Korzystamy z niezbędnych plików cookies (język, zgoda) oraz — jeśli wypełnicie potwierdzenie obecności — zapisujemy zgłoszenie lokalnie w przeglądarce. Szczegóły w RODO i polityce prywatności.",
+    "text": "Na ewelinaiarkadiusz.pl korzystamy wyłącznie z niezbędnych plików cookies: zgoda na baner, język (PL/EN), wybrany motyw oraz zdjęcie w nagłówku. Szczegóły w RODO i polityce prywatności.",
     "accept": "Akceptuję",
     "checkbox": "Wyrażam zgodę na wykorzystywanie plików cookies oraz przetwarzanie danych osobowych w celach opisanych w dokumentach RODO i polityki prywatności."
   },
   "legal": {
-    "disclaimer": "To strona demonstracyjna (portfolio). Treść prawna jest poglądowa i wymaga weryfikacji przed publikacją u prawdziwej pary.",
+    "disclaimer": "Informacja dotyczy serwisu ewelinaiarkadiusz.pl — strony ślubnej Eweliny i Arkadiusza.",
     "back": "Wróć do strony głównej",
     "rodoTitle": "Informacja RODO",
     "privacyTitle": "Polityka prywatności"
@@ -334,7 +336,12 @@
   "theme": {
     "lang": "Język",
     "bar": "Wybór motywu",
-    "change": "Zmień motyw:"
+    "change": "Zmień motyw:",
+    "photoBar": "Wybór zdjęcia w nagłówku",
+    "choosePhoto": "Wybierz zdjęcie:",
+    "photoBeach": "Plaża",
+    "photoParis": "Paryż",
+    "photoRestaurant": "Restauracja"
   },
   "common": {
     "skip": "Przejdź do treści"

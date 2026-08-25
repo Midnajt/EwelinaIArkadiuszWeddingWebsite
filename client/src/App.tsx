@@ -4,9 +4,9 @@ import { ThemeBar } from "@/components/layout/ThemeBar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { EventCards } from "@/components/sections/EventCards";
-import { GuestEssentials } from "@/components/sections/GuestEssentials";
+// import { GuestEssentials } from "@/components/sections/GuestEssentials";
 import { CountdownDays } from "@/components/sections/CountdownDays";
-import { LoveStory } from "@/components/sections/LoveStory";
+// import { LoveStory } from "@/components/sections/LoveStory";
 import { Slider } from "@/components/sections/Slider";
 // import { DayTimeline } from "@/components/sections/DayTimeline";
 // import { TablePlan } from "@/components/sections/TablePlan";
@@ -14,7 +14,7 @@ import { Slider } from "@/components/sections/Slider";
 // import { LogisticsGrid } from "@/components/sections/LogisticsGrid";
 // import { GiftWishes } from "@/components/sections/GiftWishes";
 // import { RsvpForm } from "@/components/sections/RsvpForm";
-import { Gallery } from "@/components/sections/Gallery";
+// import { Gallery } from "@/components/sections/Gallery";
 // import { GuestBook } from "@/components/sections/GuestBook";
 // import { Witnesses } from "@/components/sections/Witnesses";
 import { Contact } from "@/components/sections/Contact";
@@ -29,9 +29,9 @@ function HomePage() {
     <main id="content">
       <Hero />
       <EventCards />
-      <GuestEssentials />
+      {/* <GuestEssentials /> */}
       <CountdownDays />
-      <LoveStory />
+      {/* <LoveStory /> */}
       <Slider />
       {/* <DayTimeline /> */}
       {/* <TablePlan /> */}
@@ -39,7 +39,7 @@ function HomePage() {
       {/* <LogisticsGrid /> */}
       {/* <GiftWishes /> */}
       {/* <RsvpForm /> */}
-      <Gallery />
+      {/* <Gallery /> */}
       {/* <GuestBook /> */}
       {/* <Witnesses /> */}
       <Contact />

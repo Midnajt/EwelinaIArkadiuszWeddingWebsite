@@ -20,4 +20,4 @@ Na stronie internetowej mają się znaleźć wszystkie kluczowe informacje dotyc
 Za każdym razem gdy skończysz pracę to poniżej pod 'Ostatnie zadania:' opisz w trzech zdaniach co było zrobione. Dzięki temu łatwiej jest mi wrócić do pracy.
 
 Ostatnie zadania:
-Napisałem raport `.cursor/reports/podsumowanie_prac_20260825.md`: rebrand Eweliny i Arkadiusza, Spytkowice, data 27.11.2026, hero i loga, telefony, lista włączonych i zakomentowanych sekcji. Do zrobienia zostają maile, prawdziwe zdjęcia galerii, godziny i push na GitHub.
+W motywie Boho hero używa `logo_black.png` zamiast złotego (z `invert`, żeby monogram był widoczny na ciemnym zdjęciu). Love i Prestige zostają przy `logo_gold.png` i `mix-blend-screen`.

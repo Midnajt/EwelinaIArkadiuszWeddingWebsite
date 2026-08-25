@@ -4,15 +4,15 @@ import { cn } from "@/lib/utils";
 
 export function FloralDivider({ className }: { className?: string }) {
   const { presetId } = useTheme();
-  const invertOnDark = presetId === "noirGold";
+  const prestige = presetId === "noirGold";
 
   return (
     <img
-      src={images.ornament}
+      src={prestige ? images.logoGold : images.ornament}
       alt=""
       className={cn(
         "mx-auto h-16 w-auto max-w-[min(100%,22rem)] object-contain md:h-20",
-        invertOnDark && "invert",
+        prestige && "mix-blend-screen",
         className,
       )}
       loading="lazy"

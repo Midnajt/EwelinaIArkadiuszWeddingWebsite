@@ -18,9 +18,9 @@ import {
 const LINKS = [
   { href: "#slub", key: "nav.ceremony" },
   { href: "#wesele", key: "nav.reception" },
-  { href: "#historia", key: "nav.story" },
+  // { href: "#historia", key: "nav.story" },
   // { href: "#plan", key: "nav.schedule" },
-  { href: "#galeria", key: "nav.gallery" },
+  // { href: "#galeria", key: "nav.gallery" },
   { href: "#kontakt", key: "nav.contact" },
 ] as const;
 
@@ -30,6 +30,7 @@ const sheetLinkClass =
 export function Navbar() {
   const { t, i18n } = useTranslation();
   const { presetId } = useTheme();
+  const prestige = presetId === "noirGold";
   const [open, setOpen] = useState(false);
 
   const toggleLang = () => {
@@ -41,9 +42,9 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <a href="#top" className="flex shrink-0 items-center" aria-label={site.name}>
           <img
-            src={images.ornament}
+            src={prestige ? images.logoGold : images.ornament}
             alt=""
-            className={cn("h-10 w-auto object-contain", presetId === "noirGold" && "invert")}
+            className={cn("h-12 w-auto object-contain", prestige && "mix-blend-screen")}
           />
         </a>
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Główne">

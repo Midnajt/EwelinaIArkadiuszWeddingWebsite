@@ -8,8 +8,10 @@ alwaysApply: false
 
 - Kolory, fonty, radius, overlay hero i wariant układu (hero/gęstość/powierzchnia) edytuj wyłącznie w `client/src/config/theme.ts`. Nie rozrzucaj hexów po komponentach.
 - Dane pary (telefon, adres, mapa): `client/src/config/site.ts`.
-- Trzy presety publiczne: `boho` / `forest` / `noirGold`. Belka `ThemeBar` nad Navbarem przełącza je i zapisuje w `localStorage` (`wedding-theme`).
+- Trzy presety publiczne: `boho` / `love` / `noirGold`. Belka `ThemeBar` nad Navbarem przełącza je i zapisuje w `localStorage` (`wedding-theme`).
+- Obok motywów belka ma wybór zdjęcia hero (`plaża` / `paryż` / `restauracja`) — `wedding-hero-photo`, config `client/src/config/hero-photo.ts`.
 - Belka jest zawsze widoczna (także na FTP). Nie zależy od `VITE_SHOW_DEV_PANEL`.
+- Motyw `love` — burgund z talerzy ze zdjęcia restauracji (`theme.ts`). Ikona: serce.
 - Motyw `noirGold` ma `surface: "glass"` — glassmorphism całej strony w `index.css` przez `html[data-theme="noirGold"]`.
 - W Prestige przyciski primary, FAB i liczba odliczania używają złotych gradientów metalicznych z `index.css` (`--gold-metallic`, `--gold-figure`).
 - i18n: `react-i18next`, domyślnie PL, pliki `client/src/i18n/locales/pl.json` i `en.json`.
