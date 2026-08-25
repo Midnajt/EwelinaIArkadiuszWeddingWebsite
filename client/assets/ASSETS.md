@@ -9,7 +9,8 @@ Podmieniając plik zachowaj **tę samą nazwę**, albo zaktualizuj import w `cli
 
 | Plik | Zastosowanie | Kadr źródłowy |
 | --- | --- | --- |
-| `hero.png` | Hero (Paryż) + slider — para wieczorem, wieża Eiffla | z `assets_from_client/hero.png` |
+| `hero.png` | Hero (Paryż) + slider — para wieczorem, wieża Eiffla (desktop, ≥768 px) | z `assets_from_client/hero.png` |
+| `hero_mobile.png` | Hero (Paryż) + slider — ten sam kadr, pionowy (mobile, &lt;768 px) | z `assets_from_client/hero_mobile.png` |
 | `beach.png` | Hero (plaża) + slider — para na plaży o zachodzie słońca | z `assets_from_client/beach.png` |
 | `restaurant.png` | Hero (restauracja) + slider + tło stopki tylko w Prestige | z `assets_from_client/restaurant.png` |
 | `logo_gold.png` | Monogram E&A: hero (Love i Prestige) oraz navbar/separatory w Prestige (`mix-blend-screen`) | z `assets_from_client/logo_gold.png` |

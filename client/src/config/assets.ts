@@ -1,5 +1,6 @@
 import demoHero from "../../assets/5F4A6221.jpg?url";
 import hero from "../../assets/hero.png?url";
+import heroMobile from "../../assets/hero_mobile.png?url";
 import beach from "../../assets/beach.png?url";
 import restaurant from "../../assets/restaurant.png?url";
 import logoGold from "../../assets/logo_gold.png?url";
@@ -16,12 +17,21 @@ import ornament from "../../assets/logo_black.png?url";
 
 export type PhotoItem = {
   src: string;
+  mobileSrc?: string;
   altKey: string;
   objectPosition?: string;
 };
 
+export const heroParisPhoto = {
+  src: hero,
+  mobileSrc: heroMobile,
+  altKey: "photos.hero",
+  objectPosition: "center 40%",
+} as const satisfies PhotoItem;
+
 export const images = {
   hero,
+  heroMobile,
   beach,
   restaurant,
   logoGold,
@@ -33,7 +43,7 @@ export const images = {
   ] as const satisfies readonly PhotoItem[],
   slider: [
     { src: beach, altKey: "photos.beach", objectPosition: "center 42%" },
-    { src: hero, altKey: "photos.hero", objectPosition: "center 48%" },
+    { ...heroParisPhoto, objectPosition: "center 48%" },
     { src: restaurant, altKey: "photos.restaurant", objectPosition: "center 40%" },
   ] as const satisfies readonly PhotoItem[],
   gallery: [

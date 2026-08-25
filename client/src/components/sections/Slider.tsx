@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { images } from "@/config/assets";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Reveal } from "@/components/motion/Reveal";
+import { ResponsivePhoto } from "@/components/ui/responsive-photo";
 import {
   Carousel,
   CarouselContent,
@@ -21,12 +22,12 @@ export function Slider() {
           <Carousel opts={{ loop: true }} className="px-12">
             <CarouselContent>
               {images.slider.map((slide) => (
-                <CarouselItem key={slide.src}>
+                <CarouselItem key={slide.altKey}>
                   <div className="group overflow-hidden rounded-xl">
-                    <img
-                      src={slide.src}
+                    <ResponsivePhoto
+                      photo={slide}
                       alt={t(slide.altKey)}
-                      className="ease-smooth h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.04] md:h-[32rem]"
+                      className="ease-smooth h-72 w-full transition-transform duration-500 group-hover:scale-[1.04] md:h-[32rem]"
                       style={{ objectPosition: slide.objectPosition ?? "center 20%" }}
                       loading="lazy"
                     />

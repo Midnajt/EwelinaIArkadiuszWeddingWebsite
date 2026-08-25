@@ -1,4 +1,4 @@
-import { images, type PhotoItem } from "@/config/assets";
+import { heroParisPhoto, images, type PhotoItem } from "@/config/assets";
 
 export type HeroPhotoId = "beach" | "paris" | "restaurant";
 
@@ -16,7 +16,7 @@ export const heroPhotoOptions: readonly {
 
 export const heroPhotos: Record<HeroPhotoId, PhotoItem> = {
   beach: { src: images.beach, altKey: "photos.beach", objectPosition: "center 42%" },
-  paris: { src: images.hero, altKey: "photos.hero", objectPosition: "center 40%" },
+  paris: heroParisPhoto,
   restaurant: { src: images.restaurant, altKey: "photos.restaurant", objectPosition: "center 40%" },
 };
 

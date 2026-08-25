@@ -5,6 +5,7 @@ import { site } from "@/config/site";
 import { getMotionProfile } from "@/lib/motion";
 import { useHeroPhoto } from "@/lib/hero-photo-provider";
 import { useTheme } from "@/lib/theme-provider";
+import { ResponsivePhoto } from "@/components/ui/responsive-photo";
 import { cn } from "@/lib/utils";
 import { getWeddingDateState } from "@/lib/wedding-date";
 
@@ -33,11 +34,10 @@ export function Hero() {
         animate={{ scale: 1 }}
         transition={{ duration: motionProfile.kenBurns.duration, ease: "linear" }}
       >
-        <img
-          src={photo.src}
+        <ResponsivePhoto
+          photo={photo}
           alt={t(photo.altKey)}
-          className="absolute inset-0 size-full object-cover"
-          style={{ objectPosition: photo.objectPosition ?? "center 40%" }}
+          pictureClassName="absolute inset-0"
         />
         <div className="absolute inset-0" style={{ backgroundColor: "var(--hero-overlay)" }} />
         <div className="absolute inset-0 opacity-25" style={{ background: "var(--hero-glow)" }} />
