@@ -11,7 +11,7 @@ Podmieniając plik zachowaj **tę samą nazwę**, albo zaktualizuj import w `cli
 | --- | --- | --- |
 | `hero.png` | Hero (Paryż) + slider — para wieczorem, wieża Eiffla | z `assets_from_client/hero.png` |
 | `beach.png` | Hero (plaża) + slider — para na plaży o zachodzie słońca | z `assets_from_client/beach.png` |
-| `restaurant.png` | Hero (restauracja) + slider + tło stopki — kolacja w restauracji | z `assets_from_client/restaurant.png` |
+| `restaurant.png` | Hero (restauracja) + slider + tło stopki tylko w Prestige | z `assets_from_client/restaurant.png` |
 | `logo_gold.png` | Monogram E&A: hero (Love i Prestige) oraz navbar/separatory w Prestige (`mix-blend-screen`) | z `assets_from_client/logo_gold.png` |
 | `5F4A6221.jpg` | Galeria — dawne zdjęcie hero (demo) | 6720×4480 → 1920×1280 |
 | `5F4A5869.jpg` | Historia — portret intymny (lewy) | 4480×6720 → 1280×1920 |
