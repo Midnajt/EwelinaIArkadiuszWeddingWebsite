@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#2b3340"/>
+  <circle cx="400" cy="380" r="180" fill="#d9c7a3"/>
+  <rect x="160" y="620" width="480" height="280" rx="140" fill="#d9c7a3"/>
+  <text x="40" y="960" fill="#fff" font-size="28" font-family="Georgia, serif">team-1.svg</text>
+</svg>

@@ -1,0 +1,10 @@
+---
+description: Baza danych na przyszłość — bez schematu i dumpów na start
+alwaysApply: false
+---
+
+# Baza danych
+
+- Teraz nie ma MySQL ani ORM. Nie dodawaj schematu, Dockera z bazą ani plików `.sql`.
+- Dumpy i sekrety są w `.gitignore`. Nie commituj haseł ani eksportów.
+- Gdy user poprosi o bazę: najpierw dopytaj o host/nazwę z `.env` (nie zgaduj), potem rozwiń te rules i dopiero twórz schemat.

@@ -1,0 +1,15 @@
+---
+description: Frontend wizytówki SPA — struktura, shadcn, kotwice, sekcje
+globs: client/**
+alwaysApply: false
+---
+
+# Frontend (`client/`)
+
+- Kod aplikacji: `client/src`. Alias `@/` → `client/src`. shadcn: `components/ui/`. Nowe sekcje: `components/sections/`.
+- To one-pager z kotwicami (`#oferta`, `#kontakt`). Podstrony prawne: `#/rodo`, `#/polityka` (hash, bez React Router). Router można dodać później; `.htaccess` jest w `client/public/`.
+- Kontakt: tylko CTA `tel:` i `mailto:` z `site.ts`. Nie dodawaj formularza POST, dopóki user nie poprosi.
+- Animacje: Framer Motion (wjazd nagłówków i kafelków, Ken Burns w hero, hover lift/zoom). Galeria: lightbox na Dialogu shadcn, `loading="lazy"`.
+- Slider: Carousel shadcn (Embla), źródło z `config/assets.ts`.
+- SEO: meta w `client/index.html` (tytuł, opis, OG, favicon). Bez prerenderu.
+- `npm run dev` / `build` / `preview` z korzenia repo. Build ląduje w `dist/`.

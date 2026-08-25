@@ -1,0 +1,342 @@
+{
+  "nav": {
+    "home": "Home",
+    "ceremony": "Ceremony",
+    "reception": "Reception",
+    "story": "Our story",
+    "schedule": "Schedule",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "rsvp": "Confirm attendance",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "kicker": "27 November 2026",
+    "title": "Ewelina & Arkadiusz",
+    "subtitle": {
+      "before": "We will soon meet for mass and the reception in Spytkowice.",
+      "today": "Today is the day — meet us in Spytkowice, first at the church, then at the venue.",
+      "after": "Thank you for celebrating with us — the mass and the party in Spytkowice."
+    },
+    "ctaGallery": "See photos",
+    "ctaRsvp": "Confirm attendance",
+    "ctaEssentials": "Guest essentials",
+    "ctaSchedule": "See the schedule",
+    "ctaGuestBook": "Guest book"
+  },
+  "events": {
+    "kicker": "Where and when",
+    "title": "Ceremony and reception",
+    "subtitle": "Two places in Spytkowice — church first, then the venue.",
+    "ceremony": "Ceremony",
+    "reception": "Reception",
+    "time": "Time",
+    "address": "Address",
+    "map": "Open map"
+  },
+  "essentials": {
+    "kicker": "Keep it handy",
+    "title": "Guest essentials",
+    "subtitle": "Schedule, transport, maps and contacts — the key details in one place.",
+    "schedule": {
+      "title": "Day schedule",
+      "text": "Check the ceremony, reception and key moments of the evening.",
+      "action": "See schedule"
+    },
+    "bus": {
+      "title": "Guest shuttle",
+      "text": "Leaves the church at 15:45 and returns from the venue at 3:45.",
+      "action": "Check transport"
+    },
+    "maps": {
+      "title": "Maps and directions",
+      "text": "Navigate to the church in Spytkowice or the Przystań Kabanos venue.",
+      "ceremony": "Ceremony map",
+      "reception": "Reception map"
+    },
+    "contact": {
+      "title": "Quick contact",
+      "text": "A question on the wedding day? Find the couple and witnesses in the contact section.",
+      "action": "Open contacts"
+    },
+    "calendar": {
+      "title": "Save the date",
+      "text": "Add the full day — from gathering at the church until the end of the reception — to your calendar.",
+      "action": "Add to calendar"
+    }
+  },
+  "countdown": {
+    "kicker": "Countdown",
+    "title": {
+      "before": "Until our wedding",
+      "today": "Today is the day!",
+      "after": "The wedding is behind us"
+    },
+    "message": {
+      "before": "{{count}} days until our wedding.",
+      "today": "See you at 14:00 in Spytkowice.",
+      "after": "{{count}} days have passed since our wedding."
+    },
+    "todayFigure": "Today",
+    "dateLabel": "27 November 2026"
+  },
+  "story": {
+    "kicker": "Our story",
+    "title": "How it started",
+    "p1": "We met in the most ordinary way — a chat that was meant to last a minute and turned into a walk around Spytkowice. This place has been our shared landscape ever since.",
+    "p2": "The proposal was quiet: rings, a date on a watch, and the decision that 27 November 2026 would be our day. We are happy to share this story with you."
+  },
+  "slider": {
+    "title": "Favourite moments",
+    "subtitle": "The ceremony, leaving the church, and the first dance."
+  },
+  "schedule": {
+    "kicker": "Schedule",
+    "title": "The day at a glance",
+    "subtitle": "Sample times — this is how our day is planned.",
+    "items": {
+      "gather": { "time": "13:30", "title": "Gather at the church", "text": "Guests meet at the parish church in Spytkowice." },
+      "mass": { "time": "14:00", "title": "Mass and sacrament", "text": "Wedding at the Church of the Immaculate Conception of the Blessed Virgin Mary." },
+      "exit": { "time": "15:30", "title": "Leaving the church", "text": "Photos, congratulations, then the drive to the venue in Spytkowice." },
+      "welcome": { "time": "16:30", "title": "Welcome at the venue", "text": "Bread, salt and the first toast at Przystań Kabanos." },
+      "dinner": { "time": "17:30", "title": "Wedding dinner", "text": "A seated meal and speeches." },
+      "dance": { "time": "20:00", "title": "First dance", "text": "We open the floor — then the party runs until morning." },
+      "oczepiny": { "time": "00:00", "title": "Oczepiny", "text": "Traditional games and wishes for the new road." },
+      "end": { "time": "04:00", "title": "Last dance", "text": "The after-party is announced on the night." }
+    }
+  },
+  "tables": {
+    "kicker": "Seating",
+    "title": "Table plan",
+    "subtitle": "Sample groups — a live couple site would list names.",
+    "groups": {
+      "couple": {
+        "title": "Sweetheart table",
+        "text": "Ewelina and Arkadiusz, witnesses Anna and Tomasz, and both sets of parents. Speeches after dinner land here."
+      },
+      "brideFamily": {
+        "title": "Table 1 — bride’s family",
+        "text": "Ewelina’s siblings, grandparents, aunts and uncles, and cousins on her mother’s side."
+      },
+      "groomFamily": {
+        "title": "Table 2 — groom’s family",
+        "text": "Arkadiusz’s closest family from Spytkowice: godparents, aunts, uncles and cousins."
+      },
+      "friends": {
+        "title": "Tables 3–4 — friends",
+        "text": "University, work and travel companions. Table 3 is nearer the dance floor, table 4 faces the garden."
+      },
+      "orchestra": {
+        "title": "Table 5 — the band",
+        "text": "Musicians and the sound engineer — a short dinner break between sets; instruments stay on stage."
+      },
+      "locals": {
+        "title": "Table 6 — Spytkowice",
+        "text": "Neighbours, the parish choir and friends from the area. A named list is at the hall entrance."
+      }
+    }
+  },
+  "menuFood": {
+    "kicker": "Kitchen",
+    "title": "Wedding menu",
+    "subtitle": "Sample dishes — diets were collected in the attendance form.",
+    "welcome": {
+      "title": "Welcome · 16:30",
+      "text": "Sparkling wine, juices, mint lemonade and trays of canapés, tartines and olives from the moment you enter."
+    },
+    "soup": {
+      "title": "Soup · 17:30",
+      "text": "Hot course: roasted pumpkin cream with toasted seeds. A milder red borscht for children."
+    },
+    "main": {
+      "title": "Main · 18:15",
+      "text": "Hot course: pork tenderloin in mushroom sauce or baked salmon. Vegetarian pumpkin risotto if you marked it on the attendance form."
+    },
+    "dessert": {
+      "title": "Dessert · 20:30",
+      "text": "Wedding cake after the first dance, ice cream and a sweet buffet (meringue, mini éclairs, fruit)."
+    },
+    "late": {
+      "title": "Late supper · 23:30",
+      "text": "Żurek in a bread bowl, pastries and mini bakes — fuel for oczepiny."
+    }
+  },
+  "logistics": {
+    "kicker": "Practicalities",
+    "title": "Need to know",
+    "subtitle": "Travel, shuttle, children and rooms in one place.",
+    "travel": { "title": "Getting there", "text": "The church and the reception are both in Spytkowice — a short drive from the parish (Spytkowice 21) to Przystań Kabanos (Spytkowice 625). Parking at the venue." },
+    "kids": { "title": "Children", "text": "Children are welcome. High chairs, a quiet corner and an animator in a side room." },
+    "stay": { "title": "Rooms", "text": "Rooms at Przystań Kabanos — request a stay in the attendance form; spaces are limited." },
+    "bus": {
+      "title": "Guest shuttle",
+      "text": "A hired 20-seat bus. 15:45 departure from the church in Spytkowice, at the venue around 16:20. Return from Przystań Kabanos at 3:45. Mark a seat in the attendance form."
+    },
+    "animator": {
+      "title": "Children’s animator",
+      "text": "From 17:00 to 22:00 in the room next to the dance floor, Kasia runs games, face painting and a craft corner (ages 3–10). Parents stay at the party — note childcare on the attendance form."
+    }
+  },
+  "gifts": {
+    "kicker": "Gifts",
+    "title": "Instead of flowers",
+    "subtitle": "Your presence is the gift. If you would like to add something, these two are most welcome.",
+    "house": {
+      "title": "Envelopes for the house",
+      "text": "If the envelope holds more than wishes, it goes towards building our home: the foundations, the windows, and the first kitchen we share. Every złoty is another brick."
+    },
+    "wine": {
+      "title": "Wine",
+      "text": "A favourite bottle for the cellar — red, white or something from Małopolska."
+    }
+  },
+  "rsvp": {
+    "kicker": "Reply",
+    "title": "Confirm attendance",
+    "subtitle": "The form stores your reply in this browser — nothing is sent to a server. On a client demo it shows the full guest flow.",
+    "name": "Full name",
+    "presence": "Attendance",
+    "presenceCeremony": "Ceremony only",
+    "presenceReception": "Reception only",
+    "presenceBoth": "Ceremony and reception",
+    "plusOne": "Plus one",
+    "plusOneYes": "Yes",
+    "plusOneNo": "No",
+    "diet": "Diet",
+    "dietNone": "No restrictions",
+    "dietVeg": "Vegetarian",
+    "dietVegan": "Vegan",
+    "dietOther": "Other (add a note)",
+    "children": "Children",
+    "childrenNone": "No children",
+    "childrenYes": "We are bringing children",
+    "bus": "Shuttle",
+    "busYes": "Please save a bus seat",
+    "busNo": "We will travel ourselves",
+    "stay": "Overnight",
+    "stayYes": "Please reserve a room",
+    "stayNo": "We have our own stay",
+    "note": "Notes (allergies, diet, children’s ages)",
+    "submit": "Send confirmation",
+    "success": "Thank you — we saved your reply in this browser.",
+    "reset": "Submit another reply"
+  },
+  "gallery": {
+    "kicker": "Photos",
+    "title": "Gallery",
+    "subtitle": "Click a photo to open it larger.",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "guestbook": {
+    "kicker": "After the wedding",
+    "title": "Guest book",
+    "subtitle": "A few words that stayed with us. Want to add yours? Send an email.",
+    "cta": "Add a note",
+    "entries": {
+      "one": {
+        "name": "Uncle Marek",
+        "text": "The welcome tartare was so good I took a second portion “for science”. Then a third, to confirm the findings."
+      },
+      "two": {
+        "name": "Aunt Bożenka",
+        "text": "Lovely flowers, really — only that ecru next to the runner. I would have gone more cream. But the bride decides. Still a better bouquet than Kasia’s last year."
+      },
+      "three": {
+        "name": "Cousin Krzysiek",
+        "text": "Przystań Kabanos, and the GPS led to Spytkowice. I stood in the car park looking for a harbour by the water. No harbour. The żurek in a bread bowl — that showed up."
+      }
+    }
+  },
+  "witnesses": {
+    "kicker": "The team",
+    "title": "Witnesses",
+    "subtitle": "Questions about the bus, rooms or seating — write to Ania or Tomek.",
+    "maid": "Maid of honour",
+    "bestMan": "Best man"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Ewelina and Arkadiusz",
+    "subtitle": "On the wedding day, a phone call is the quickest way to reach us.",
+    "bride": "Bride",
+    "groom": "Groom",
+    "phone": "Phone",
+    "email": "Email",
+    "mapCeremony": "Map — ceremony",
+    "mapReception": "Map — reception"
+  },
+  "partners": {
+    "kicker": "For guests",
+    "title": "We recommend",
+    "subtitle": "The same studios that got us ready for the wedding — book before the ceremony or before the next-day party. Sample offers for this presentation.",
+    "visit": "Visit website",
+    "items": {
+      "makeup": {
+        "role": "Makeup",
+        "offer": "Bridal makeup with a trial, plus looks for the maid of honour and the bride’s mother. An all-day package with touch-ups before the first dance."
+      },
+      "florist": {
+        "role": "Florist",
+        "offer": "Bridal bouquet, boutonnière, church flowers and table arrangements in beige, green and dried stems."
+      },
+      "hair": {
+        "role": "Hair",
+        "offer": "A trial updo, curls and a braid for the veil. Travel to Spytkowice on the wedding morning from 8:00."
+      },
+      "tailor": {
+        "role": "Tailor",
+        "offer": "Dress alterations, veil hemming, made-to-measure bow ties and waistcoats. Last stitches up to three days before."
+      },
+      "band": {
+        "role": "Band",
+        "offer": "A highland band for the welcome, oczepiny and encores until dawn. Two sets plus a DJ in the break; PA included."
+      },
+      "photo": {
+        "role": "Photographer",
+        "offer": "Coverage from getting ready to oczepiny, portraits in Spytkowice, and an online gallery within 21 days."
+      }
+    }
+  },
+  "photos": {
+    "hero": "Ewelina and Arkadiusz at night in Paris, the Eiffel Tower behind them",
+    "intimate": "Close-up of the couple, foreheads together",
+    "brideSmile": "The bride smiling over the groom’s shoulder",
+    "hands": "Joined hands and a wedding ring",
+    "churchExit": "Joyful exit from the church",
+    "ceremony": "The couple at the altar in Spytkowice",
+    "firstDance": "First dance with white heart confetti",
+    "sacrament": "The priest wrapping a stole around joined hands",
+    "brideDetails": "Bride details: perfume, jewellery and bouquet",
+    "groomDetails": "Rings on a watch, cufflinks and the groom’s pocket square"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "createdBy": "Website by",
+    "privacy": "Privacy policy",
+    "rodo": "GDPR notice",
+    "demo": "This is a demonstration site for client presentations."
+  },
+  "cookies": {
+    "title": "Cookie and data-processing consent",
+    "text": "We use essential cookies (language, consent) and — if you fill in the attendance form — store the reply locally in your browser. Details are in the GDPR notice and privacy policy.",
+    "accept": "Accept",
+    "checkbox": "I agree to cookies and to personal-data processing for the purposes described in the GDPR notice and privacy policy."
+  },
+  "legal": {
+    "disclaimer": "This is a demonstration (portfolio) site. The legal copy is a sample and needs review before publishing for a real couple.",
+    "back": "Back to home",
+    "rodoTitle": "GDPR notice",
+    "privacyTitle": "Privacy policy"
+  },
+  "theme": {
+    "lang": "Language",
+    "bar": "Choose a theme",
+    "change": "Change theme:"
+  },
+  "common": {
+    "skip": "Skip to content"
+  }
+}

@@ -1,0 +1,23 @@
+---
+description: Zasady wspólne — raporty, .env, stack, FTP, bez backendu na start
+alwaysApply: true
+---
+
+# Cel
+
+Celem projektu jest utworzenie strony internetowej dedykowanej weselu Eweliny i Arkadiusza (ewelinaiarkadiusz.pl).
+Na stronie internetowej mają się znaleźć wszystkie kluczowe informacje dotyczące tego wyjątkowego dnia, które mogą być przydatne zarówno dla gości jak i dla organizatorów. Dzięki temu łatwo w jednym miejscu będzie uzyskać wszelkie dane dotyczące imprezy, mszy etc.
+
+# Wspólne
+
+- Raport, podsumowanie lub plan pracy zapisuj w `.cursor/reports/` z datą na końcu nazwy: `temat_YYYYMMDD.md`.
+- Plik `.env` już istnieje i jest w `.gitignore`. Nie zgaduj zmiennych — zapytaj albo zleć edycję. Kod czyta `import.meta.env.VITE_*`. Wzór: `.env.example`.
+- Komunikacja z użytkownikiem po polsku. Nazwy w kodzie po angielsku.
+- Stack: Vite + React + TypeScript strict + Tailwind v4 + shadcn/ui. Menedżer: npm.
+- Publikacja: `npm run build` → wrzuć zawartość `dist/` na FTP. Nie dodawaj skryptu FTP, dopóki user nie poprosi.
+- Backend i baza są rzadko potrzebne. Nie stawiaj Expressa, API ani MySQL sam z siebie.
+- Po zmianie treści klienta edytuj `client/src/config/site.ts`, `theme.ts` i `client/src/i18n/locales/`. Grafiki: najpierw przeczytaj `client/assets/ASSETS.md`.
+Za każdym razem gdy skończysz pracę to poniżej pod 'Ostatnie zadania:' opisz w trzech zdaniach co było zrobione. Dzięki temu łatwiej jest mi wrócić do pracy.
+
+Ostatnie zadania:
+Napisałem raport `.cursor/reports/podsumowanie_prac_20260825.md`: rebrand Eweliny i Arkadiusza, Spytkowice, data 27.11.2026, hero i loga, telefony, lista włączonych i zakomentowanych sekcji. Do zrobienia zostają maile, prawdziwe zdjęcia galerii, godziny i push na GitHub.
