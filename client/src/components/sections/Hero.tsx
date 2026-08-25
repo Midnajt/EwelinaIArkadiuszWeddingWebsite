@@ -1,0 +1,136 @@
+import { motion, useReducedMotion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { images } from "@/config/assets";
+import { site } from "@/config/site";
+import { getMotionProfile } from "@/lib/motion";
+import { useHeroPhoto } from "@/lib/hero-photo-provider";
+import { useTheme } from "@/lib/theme-provider";
+import { cn } from "@/lib/utils";
+import { getWeddingDateState } from "@/lib/wedding-date";
+
+export function Hero() {
+  const { t } = useTranslation();
+  const reduce = useReducedMotion();
+  const { presetId } = useTheme();
+  const { photoId, photo } = useHeroPhoto();
+  const motionProfile = getMotionProfile(presetId);
+  const words = site.name.split(" ");
+  const { phase } = getWeddingDateState(site.weddingDate);
+  const boho = presetId === "boho";
+  // CTA w hero wyłączone (Niezbędnik, RSVP, plan dnia)
+  // const primaryAction =
+  //   phase === "after"
+  //     ? { href: "#galeria", label: t("hero.ctaGallery"), icon: Images }
+  //     : { href: "#niezbednik", label: t("hero.ctaEssentials"), icon: Info };
+  // const secondaryAction = null;
+
+  return (
+    <section className="relative min-h-[88vh] overflow-hidden">
+      <motion.div
+        key={`${presetId}-${photoId}`}
+        className="absolute inset-0 z-0"
+        initial={reduce ? false : { scale: motionProfile.kenBurns.fromScale }}
+        animate={{ scale: 1 }}
+        transition={{ duration: motionProfile.kenBurns.duration, ease: "linear" }}
+      >
+        <img
+          src={photo.src}
+          alt={t(photo.altKey)}
+          className="absolute inset-0 size-full object-cover"
+          style={{ objectPosition: photo.objectPosition ?? "center 40%" }}
+        />
+        <div className="absolute inset-0" style={{ backgroundColor: "var(--hero-overlay)" }} />
+        <div className="absolute inset-0 opacity-25" style={{ background: "var(--hero-glow)" }} />
+      </motion.div>
+
+      <div className="relative z-10 mx-auto flex min-h-[88vh] max-w-6xl flex-col items-center justify-center px-4 py-24 text-center text-white sm:px-6">
+        <div className="hero-panel flex max-w-3xl flex-col items-center">
+          <motion.p
+            className="text-sm font-medium tracking-[0.35em] uppercase text-white/85"
+            initial={reduce ? false : { opacity: 0, y: -16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            {t("hero.kicker")}
+          </motion.p>
+
+          <motion.h1
+            className="font-heading mt-4 text-5xl leading-tight md:text-7xl"
+            variants={motionProfile.heroWordContainer}
+            initial={reduce ? false : "hidden"}
+            animate="show"
+            aria-label={site.name}
+          >
+            {words.map((word, index) => (
+              <motion.span
+                key={`${word}-${index}`}
+                variants={motionProfile.heroWord}
+                className="mr-[0.22em] inline-block last:mr-0"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.h1>
+
+          <motion.p
+            className="mt-5 max-w-xl text-base text-white/90 md:text-lg"
+            variants={motionProfile.fadeUp}
+            initial={reduce ? false : "hidden"}
+            animate="show"
+            transition={{ delay: 0.9 }}
+          >
+            {t(`hero.subtitle.${phase}`)}
+          </motion.p>
+
+          <motion.div
+            variants={motionProfile.fadeUp}
+            initial={reduce ? false : "hidden"}
+            animate="show"
+            transition={{ delay: 1 }}
+          >
+            <img
+              src={boho ? images.ornament : images.logoGold}
+              alt=""
+              className={cn(
+                "mx-auto mt-8 h-20 w-auto max-w-[min(100%,16rem)] object-contain md:h-28",
+                boho ? "invert" : "mix-blend-screen",
+              )}
+            />
+          </motion.div>
+
+          {/* CTA wyłączone — Niezbędnik gościa
+          <motion.div
+            className="mt-8 flex flex-wrap justify-center gap-3"
+            variants={motionProfile.fadeUp}
+            initial={reduce ? false : "hidden"}
+            animate="show"
+            transition={{ delay: 1.1 }}
+          >
+            <motion.div whileHover={reduce ? undefined : motionProfile.hoverGlow} whileTap={{ scale: 0.97 }}>
+              <Button asChild size="lg">
+                <a href={primaryAction.href}>
+                  <PrimaryIcon />
+                  {primaryAction.label}
+                </a>
+              </Button>
+            </motion.div>
+          </motion.div>
+          */}
+        </div>
+      </div>
+
+      <motion.div
+        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center"
+        initial={reduce ? false : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.8, duration: 1 }}
+      >
+        <motion.div
+          className="h-10 w-px bg-linear-to-b from-white/60 to-transparent"
+          animate={reduce ? undefined : { y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
+        />
+      </motion.div>
+    </section>
+  );
+}

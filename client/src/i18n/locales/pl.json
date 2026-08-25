@@ -1,0 +1,349 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "ceremony": "Ślub",
+    "reception": "Wesele",
+    "story": "Historia",
+    "schedule": "Plan dnia",
+    "gallery": "Galeria",
+    "contact": "Kontakt",
+    "rsvp": "Potwierdź obecność",
+    "menu": "Menu",
+    "close": "Zamknij"
+  },
+  "hero": {
+    "kicker": "27 listopada 2026",
+    "title": "Ewelina & Arkadiusz",
+    "subtitle": {
+      "before": "Już wkrótce spotkamy się na mszy i weselu w Spytkowicach.",
+      "today": "To już dziś — czekamy na Was w Spytkowicach, najpierw w kościele, a później na sali.",
+      "after": "Dziękujemy, że byliście z nami — msza i wesele w Spytkowicach."
+    },
+    "ctaGallery": "Zobacz zdjęcia",
+    "ctaRsvp": "Potwierdź obecność",
+    "ctaEssentials": "Niezbędnik gościa",
+    "ctaSchedule": "Zobacz plan dnia",
+    "ctaGuestBook": "Księga gości"
+  },
+  "events": {
+    "kicker": "Gdzie i kiedy",
+    "title": "Ślub i wesele",
+    "subtitle": "Dwie lokalizacje w Spytkowicach — najpierw kościół, potem sala.",
+    "ceremony": "Ślub",
+    "reception": "Wesele",
+    "time": "Godzina",
+    "address": "Adres",
+    "map": "Otwórz mapę"
+  },
+  "essentials": {
+    "kicker": "Ważne pod ręką",
+    "title": "Niezbędnik gościa",
+    "subtitle": "Plan, transport, mapy i kontakt — najważniejsze informacje w jednym miejscu.",
+    "schedule": {
+      "title": "Plan dnia",
+      "text": "Sprawdź godziny ceremonii, przyjęcia i najważniejszych punktów wieczoru.",
+      "action": "Zobacz plan"
+    },
+    "bus": {
+      "title": "Bus dla gości",
+      "text": "Odjazd sprzed kościoła o 15:45, powrót z sali o 3:45.",
+      "action": "Sprawdź transport"
+    },
+    "maps": {
+      "title": "Mapy i dojazd",
+      "text": "Otwórz nawigację do kościoła w Spytkowicach lub sali weselnej „Przystań Kabanos”.",
+      "ceremony": "Mapa ślubu",
+      "reception": "Mapa wesela"
+    },
+    "contact": {
+      "title": "Szybki kontakt",
+      "text": "Masz pytanie w dniu wesela? Dane pary i świadków są w sekcji kontaktowej.",
+      "action": "Przejdź do kontaktu"
+    },
+    "calendar": {
+      "title": "Zapisz termin",
+      "text": "Dodaj cały dzień — od zbiórki przed ślubem do zakończenia wesela — do swojego kalendarza.",
+      "action": "Dodaj do kalendarza"
+    }
+  },
+  "countdown": {
+    "kicker": "Odliczanie",
+    "title": {
+      "before": "Do naszego ślubu",
+      "today": "To już dziś!",
+      "after": "Wesele za nami"
+    },
+    "message": {
+      "before": "Pozostało {{count}} dni do naszego ślubu.",
+      "today": "Widzimy się o 14:00 w Spytkowicach.",
+      "after": "Minęło {{count}} dni od naszego ślubu."
+    },
+    "todayFigure": "Dziś",
+    "dateLabel": "27 listopada 2026"
+  },
+  "story": {
+    "kicker": "Nasza historia",
+    "title": "Jak to się zaczęło",
+    "p1": "Poznaliśmy się zwyczajnie — rozmowa, która miała trwać chwilę, a skończyła się spacerem po Spytkowicach. Od tamtej pory ta okolica jest naszym wspólnym krajobrazem.",
+    "p2": "Zaręczyny przyszły bez wielkiej sceny: obrączki, data na zegarku i decyzja, że 27 listopada 2026 będzie naszym dniem. Cieszymy się, że możemy dzielić tę historię z Wami."
+  },
+  "slider": {
+    "title": "Najlepsze wspólne chwile",
+    "subtitle": "Zachód słońca na plaży, wieczór w Paryżu i kolacja we dwoje."
+  },
+  "schedule": {
+    "kicker": "Harmonogram",
+    "title": "Plan dnia",
+    "subtitle": "Godziny poglądowe — tak wygląda plan naszego dnia.",
+    "items": {
+      "gather": { "time": "13:30", "title": "Zbiórka przy kościele", "text": "Goście zbierają się przy kościele w Spytkowicach." },
+      "mass": { "time": "14:00", "title": "Msza święta i sakrament", "text": "Ślub w kościele pw. Niepokalanego Poczęcia NMP." },
+      "exit": { "time": "15:30", "title": "Wyjście i życzenia", "text": "Zdjęcia, życzenia i przejazd na salę w Spytkowicach." },
+      "welcome": { "time": "16:30", "title": "Powitanie na sali", "text": "Chleb, sól i pierwszy toast w restauracji „Przystań Kabanos”." },
+      "dinner": { "time": "17:30", "title": "Obiad weselny", "text": "Uroczysta kolacja i przemówienia." },
+      "dance": { "time": "20:00", "title": "Pierwszy taniec", "text": "Otwieramy parkiet — potem biesiada do rana." },
+      "oczepiny": { "time": "00:00", "title": "Oczepiny", "text": "Tradycyjne zabawy i życzenia na nową drogę." },
+      "end": { "time": "04:00", "title": "Zakończenie zabawy", "text": "Poprawiny ogłaszamy na sali." }
+    }
+  },
+  "tables": {
+    "kicker": "Rozsada",
+    "title": "Plan stołów",
+    "subtitle": "Przykładowe grupy — na żywej stronie pary lista jest imienna.",
+    "groups": {
+      "couple": {
+        "title": "Stół honorowy — para młoda",
+        "text": "Ewelina i Arkadiusz, świadkowie Anna i Tomasz oraz rodzice obojga. Tu składamy życzenia po obiedzie."
+      },
+      "brideFamily": {
+        "title": "Stół 1 — rodzina panny młodej",
+        "text": "Rodzeństwo Eweliny, dziadkowie, ciocie i wujkowie oraz kuzynostwo od strony mamy."
+      },
+      "groomFamily": {
+        "title": "Stół 2 — rodzina pana młodego",
+        "text": "Najbliżsi Arkadiusza ze Spytkowic: rodzice chrzestni, ciocie, wujkowie i kuzyni."
+      },
+      "friends": {
+        "title": "Stoły 3–4 — przyjaciele",
+        "text": "Ekipa ze studiów, pracy i wspólnych wyjazdów. Stół 3 bliżej parkietu, stół 4 od strony ogrodu."
+      },
+      "orchestra": {
+        "title": "Stół 5 — orkiestra",
+        "text": "Zespół i realizator dźwięku — krótka przerwa na kolację między setami, instrumenty zostają na scenie."
+      },
+      "locals": {
+        "title": "Stół 6 — Spytkowice",
+        "text": "Sąsiedzi, chór parafialny i znajomi z okolicy. Imienna lista wisi przy wejściu na salę."
+      }
+    }
+  },
+  "menuFood": {
+    "kicker": "Kuchnia",
+    "title": "Menu weselne",
+    "subtitle": "Przykładowe dania — diety zgłaszaliście w potwierdzeniu obecności.",
+    "welcome": {
+      "title": "Powitanie · 16:30",
+      "text": "Wino musujące, soki, lemoniada z miętą oraz tace z kanapkami, tartinkami i oliwkami — od wejścia na salę."
+    },
+    "soup": {
+      "title": "Zupa · 17:30",
+      "text": "Ciepłe danie: krem z dyni z prażonymi pestkami. Dla dzieci łagodniejszy barszczyk czerwony."
+    },
+    "main": {
+      "title": "Danie główne · 18:15",
+      "text": "Ciepłe danie: polędwiczki wieprzowe w sosie pieczarkowym albo pieczony łosoś. Wersja wegetariańska (risotto z dynią) na życzenie z potwierdzenia obecności."
+    },
+    "dessert": {
+      "title": "Deser · 20:30",
+      "text": "Tort weselny po pierwszym tańcu, lody i słodki bufet (beza, mini eklerki, owoce)."
+    },
+    "late": {
+      "title": "Ciepła kolacja · 23:30",
+      "text": "Żurek w chlebie, paszteciki i mini zapiekanki — żeby starczyło sił do oczepin."
+    }
+  },
+  "logistics": {
+    "kicker": "Organizacja",
+    "title": "Sprawy organizacyjne",
+    "subtitle": "Dojazd, bus, dzieci i nocleg — w jednym miejscu.",
+    "travel": { "title": "Dojazd", "text": "Kościół i sala weselna są w Spytkowicach — krótki przejazd między parafią (Spytkowice 21) a restauracją „Przystań Kabanos” (Spytkowice 625). Parking przy sali." },
+    "kids": { "title": "Dzieci", "text": "Dzieci są mile widziane. Na sali są krzesełka, kącik na drzemkę i animator w osobnej salce." },
+    "stay": { "title": "Nocleg", "text": "Noclegi przy restauracji „Przystań Kabanos” — zgłoście nocleg w potwierdzeniu obecności, miejsc jest ograniczona liczba." },
+    "bus": {
+      "title": "Bus dla gości",
+      "text": "Wynajęty 20-osobowy bus. O 15:45 odjazd sprzed kościoła w Spytkowicach, na salę ok. 16:20. Powrót z Przystani Kabanos o 3:45. Miejsce zaznaczcie w potwierdzeniu obecności."
+    },
+    "animator": {
+      "title": "Animator dla dzieci",
+      "text": "Od 17:00 do 22:00 w salce obok parkietu Kasia prowadzi zabawy, malowanie buziek i kącik kreatywny (dzieci 3–10 lat). Rodzice zostają na weselu — opiekę zgłoście przy potwierdzeniu obecności."
+    }
+  },
+  "gifts": {
+    "kicker": "Prezenty",
+    "title": "Zamiast kwiatów",
+    "subtitle": "Wasza obecność jest najważniejsza. Jeśli chcecie coś dodać, mile widziane są te dwie rzeczy.",
+    "house": {
+      "title": "Koperty na dom",
+      "text": "Jeśli w kopercie znajdzie się coś więcej niż życzenia — trafi na budowę domu: fundamenty, okna i pierwszą wspólną kuchnię. Każda złotówka to kolejna cegła."
+    },
+    "wine": {
+      "title": "Wino",
+      "text": "Ulubiona butelka do piwniczki — czerwone, białe albo coś z Małopolski."
+    }
+  },
+  "rsvp": {
+    "kicker": "Potwierdzenie",
+    "title": "Potwierdź obecność",
+    "subtitle": "Formularz zapisuje zgłoszenie w tej przeglądarce — bez wysyłki na serwer. Na prezentacji pokazuje pełny przepływ gościa.",
+    "name": "Imię i nazwisko",
+    "presence": "Obecność",
+    "presenceCeremony": "Tylko ślub",
+    "presenceReception": "Tylko wesele",
+    "presenceBoth": "Ślub i wesele",
+    "plusOne": "Osoba towarzysząca (+1)",
+    "plusOneYes": "Tak",
+    "plusOneNo": "Nie",
+    "diet": "Dieta",
+    "dietNone": "Bez ograniczeń",
+    "dietVeg": "Wegetariańska",
+    "dietVegan": "Wegańska",
+    "dietOther": "Inna (wpisz w uwadze)",
+    "children": "Dzieci",
+    "childrenNone": "Bez dzieci",
+    "childrenYes": "Będą z nami dzieci",
+    "bus": "Bus",
+    "busYes": "Prosimy o miejsce w busie",
+    "busNo": "Dojazd we własnym zakresie",
+    "stay": "Nocleg",
+    "stayYes": "Prosimy o nocleg w ośrodku",
+    "stayNo": "Nocleg we własnym zakresie",
+    "note": "Uwagi (alergie, dieta, wiek dzieci)",
+    "submit": "Wyślij potwierdzenie",
+    "success": "Dziękujemy — zgłoszenie zapisaliśmy w tej przeglądarce.",
+    "reset": "Wyślij kolejne zgłoszenie"
+  },
+  "gallery": {
+    "kicker": "Zdjęcia",
+    "title": "Nasza galeria",
+    "subtitle": "Kliknij zdjęcie, aby otworzyć je w powiększeniu.",
+    "close": "Zamknij",
+    "prev": "Poprzednie",
+    "next": "Następne"
+  },
+  "guestbook": {
+    "kicker": "Po weselu",
+    "title": "Księga gości",
+    "subtitle": "Kilka słów, które zostały z nami. Chcesz dopisać swoje? Napisz e-mail.",
+    "cta": "Dodaj wpis",
+    "entries": {
+      "one": {
+        "name": "Wujek Marek",
+        "text": "Tatar na powitaniu był tak dobry, że wziąłem drugą porcję „na próbę”. Potem trzecią, bo trzeba było potwierdzić wynik badań."
+      },
+      "two": {
+        "name": "Ciocia Bożenka",
+        "text": "Kwiaty ładne, ładne, tylko ten odcień ecru przy bieżniku — no, ja bym dała bardziej śmietankowy. Ale młodej wolno. Bukiet i tak lepszy niż u Kasi w zeszłym roku."
+      },
+      "three": {
+        "name": "Kuzyn Krzysiek",
+        "text": "Przystań Kabanos, a GPS prowadzi do Spytkowic. Stałem chwilę na parkingu i szukałem przystani nad wodą. Przystani nad wodą nie było. Żurek w chlebie — był."
+      }
+    }
+  },
+  "witnesses": {
+    "kicker": "Drużyna",
+    "title": "Świadkowie",
+    "subtitle": "W razie pytań o bus, nocleg albo rozsady — piszcie do Ani albo Tomka.",
+    "maid": "Świadkowa",
+    "bestMan": "Świadek"
+  },
+  "contact": {
+    "kicker": "Kontakt",
+    "title": "Ewelina i Arkadiusz",
+    "subtitle": "W dniu ślubu najszybciej złapiecie nas telefonem.",
+    "bride": "Panna młoda",
+    "groom": "Pan młody",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "mapCeremony": "Mapa — ślub",
+    "mapReception": "Mapa — wesele"
+  },
+  "partners": {
+    "kicker": "Dla gości",
+    "title": "Polecamy",
+    "subtitle": "Te same pracownie, które przygotowały nas do ślubu — umówcie się przed ceremonią albo przed poprawinami. Oferty poglądowe na potrzeby prezentacji.",
+    "visit": "Zobacz stronę",
+    "items": {
+      "makeup": {
+        "role": "Makijaż",
+        "offer": "Makijaż ślubny z próbą, makijaż świadkowej i matki panny młodej. Pakiet „cały dzień” z poprawkami przed pierwszym tańcem."
+      },
+      "florist": {
+        "role": "Florystyka",
+        "offer": "Bukiet panny młodej, butonierka, kwiaty do kościoła i na stoły. Kompozycje w beżu, zieleni i suszu."
+      },
+      "hair": {
+        "role": "Fryzura",
+        "offer": "Upiecie z próbą, loki i warkocz do welonu. Dojazd do Spytkowic w dniu ślubu od 8:00."
+      },
+      "tailor": {
+        "role": "Krawiec",
+        "offer": "Poprawki sukni, skrócenie welonu, muszki i kamizelki na miarę. Ostatnie szwy nawet trzy dni przed terminem."
+      },
+      "band": {
+        "role": "Kapela",
+        "offer": "Góralska kapela na powitanie, oczepiny i bis do rana. Dwa sety + DJ w przerwie, nagłośnienie w cenie."
+      },
+      "photo": {
+        "role": "Fotograf",
+        "offer": "Reportaż od przygotowań do oczepin, zdjęcia plenerowe w Spytkowicach i galeria online w 21 dni."
+      }
+    }
+  },
+  "photos": {
+    "hero": "Ewelina i Arkadiusz wieczorem w Paryżu, wieża Eiffla w tle",
+    "beach": "Ewelina i Arkadiusz na plaży o zachodzie słońca",
+    "restaurant": "Ewelina i Arkadiusz podczas kolacji w restauracji",
+    "intimate": "Zbliżenie pary, czoła przy sobie",
+    "brideSmile": "Panna młoda uśmiecha się przez ramię pana młodego",
+    "hands": "Splecione dłonie pary i obrączka",
+    "churchExit": "Radosne wyjście z kościoła",
+    "ceremony": "Para przy ołtarzu w kościele w Spytkowicach",
+    "firstDance": "Pierwszy taniec na sali, białe konfetti",
+    "sacrament": "Ksiądz owija stułę wokół złączonych rąk",
+    "brideDetails": "Detale panny młodej: perfumy, biżuteria i bukiet",
+    "groomDetails": "Obrączki na zegarku, spinki i poszetka pana młodego"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "createdBy": "Strona stworzona przez",
+    "privacy": "Polityka prywatności",
+    "rodo": "RODO",
+    "demo": "Strona ślubna Eweliny i Arkadiusza — ewelinaiarkadiusz.pl."
+  },
+  "cookies": {
+    "title": "Zgoda na pliki cookies i przetwarzanie danych",
+    "text": "Na ewelinaiarkadiusz.pl korzystamy wyłącznie z niezbędnych plików cookies: zgoda na baner, język (PL/EN), wybrany motyw oraz zdjęcie w nagłówku. Szczegóły w RODO i polityce prywatności.",
+    "accept": "Akceptuję",
+    "checkbox": "Wyrażam zgodę na wykorzystywanie plików cookies oraz przetwarzanie danych osobowych w celach opisanych w dokumentach RODO i polityki prywatności."
+  },
+  "legal": {
+    "disclaimer": "Informacja dotyczy serwisu ewelinaiarkadiusz.pl — strony ślubnej Eweliny i Arkadiusza.",
+    "back": "Wróć do strony głównej",
+    "rodoTitle": "Informacja RODO",
+    "privacyTitle": "Polityka prywatności"
+  },
+  "theme": {
+    "lang": "Język",
+    "bar": "Wybór motywu",
+    "change": "Zmień motyw:",
+    "photoBar": "Wybór zdjęcia w nagłówku",
+    "choosePhoto": "Wybierz zdjęcie:",
+    "photoBeach": "Plaża",
+    "photoParis": "Paryż",
+    "photoRestaurant": "Restauracja"
+  },
+  "common": {
+    "skip": "Przejdź do treści"
+  }
+}

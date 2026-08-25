@@ -1,0 +1,12 @@
+---
+description: Backend na przyszłość — nie dodawaj serwera, dopóki user nie poprosi
+globs: server/**
+alwaysApply: false
+---
+
+# Backend
+
+- Folder `server/` jest pusty celowo. Wizytówki idą jako statyczny `dist/` na FTP.
+- Nie instaluj Expressa, nie twórz endpointów ani proxy Vite, dopóki użytkownik wyraźnie nie poprosi o backend.
+- Gdy backend będzie potrzebny (np. formularz kontaktowy): rozwiń te rules o konwencje API, `.env` (nie zgaduj sekretów) i strukturę folderów — i dopiero wtedy pisz kod.
+- Kontakt na froncie zostaje `tel:` / `mailto:`, aż powstanie uzgodniony endpoint.

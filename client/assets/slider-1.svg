@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800">
+  <rect width="1600" height="800" fill="#2c4a6e"/>
+  <rect x="80" y="80" width="1440" height="640" rx="20" fill="#8fb3d4" fill-opacity="0.35"/>
+  <text x="80" y="740" fill="#fff" font-size="40" font-family="Georgia, serif">slider-1.svg</text>
+</svg>
