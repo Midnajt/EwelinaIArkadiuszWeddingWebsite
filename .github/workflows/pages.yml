@@ -26,7 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          VITE_BASE: /ExampleWeddingSite/
+          VITE_BASE: /EwelinaIArkadiuszWeddingWebsite/
           VITE_SHOW_DEV_PANEL: "false"
       - uses: actions/upload-pages-artifact@v4
         with:
