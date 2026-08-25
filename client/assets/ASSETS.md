@@ -28,10 +28,13 @@ Podmieniając plik zachowaj **tę samą nazwę**, albo zaktualizuj import w `cli
 
 Galeria lightbox (sekcja obecnie wyłączona w `App.tsx`) używa **wszystkich 10 JPG**. Placeholdery SVG nie są importowane.
 
-## `client/public/images/`
+## `client/public/`
 
-| Plik | Zastosowanie |
-| --- | --- |
-| `og-image.png` | Open Graph — kopia `hero.png` |
-
-`favicon.svg` — monogram E&A w `client/public/favicon.svg`.
+| Plik | Zastosowanie | Źródło |
+| --- | --- | --- |
+| `images/og-image.png` | Open Graph / Twitter (1200×630) | `beach.png` — `npm exec --package=sharp -- node scripts/generate-social-images.mjs` |
+| `favicon.svg` | Favicon (SVG) | monogram E&A |
+| `favicon.ico` | Favicon (legacy) | `logo_gold.png` |
+| `favicon-32x32.png` | Favicon PNG | `logo_gold.png` |
+| `favicon-16x16.png` | Favicon PNG | `logo_gold.png` |
+| `apple-touch-icon.png` | Ikona iOS (180×180) | `logo_gold.png` |

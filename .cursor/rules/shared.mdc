@@ -20,4 +20,4 @@ Na stronie internetowej mają się znaleźć wszystkie kluczowe informacje dotyc
 Za każdym razem gdy skończysz pracę to poniżej pod 'Ostatnie zadania:' opisz w trzech zdaniach co było zrobione. Dzięki temu łatwiej jest mi wrócić do pracy.
 
 Ostatnie zadania:
-Zdjęcie restauracji i glassmorphism w stopce są tylko w motywie Prestige. Boho i Love mają z powrotem zwykłą stopkę w kolorze primary. Treść linków i copyright bez zmian.
+Wygenerowano og-image.png (1200×630) z beach.png oraz favicon.ico, PNG 16/32 i apple-touch-icon z logo_gold.png. Meta OG/Twitter w index.html używają pełnego URL ewelinaiarkadiusz.pl. Skrypt regeneracji: scripts/generate-social-images.mjs (wymaga sharp).
