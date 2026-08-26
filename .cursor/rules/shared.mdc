@@ -20,4 +20,4 @@ Na stronie internetowej mają się znaleźć wszystkie kluczowe informacje dotyc
 Za każdym razem gdy skończysz pracę to poniżej pod 'Ostatnie zadania:' opisz w trzech zdaniach co było zrobione. Dzięki temu łatwiej jest mi wrócić do pracy.
 
 Ostatnie zadania:
-Na mobile zdjęcie plaży w hero było wycentrowane, więc wycinało pannę (stoi bardziej na prawo). Dodałem `objectPositionMobile` i dla plaży ustawiłem `80% 42%` poniżej 768 px — w kadrze widać więcej jej profilu. Desktop i pozostałe zdjęcia (Paryż, restauracja) bez zmian.
+Podpięty Google Analytics 4 (`G-9S8QF0YP33`) — tag ładuje się przy starcie w `main.tsx`, bez czekania na zgodę cookies (na czas testów). Wzór zmiennej jest w `.env.example` (`VITE_GA_MEASUREMENT_ID`); gdy `.env` nie ma ID, kod używa tego samego `G-9S8QF0YP33`. Przed publikacją warto później spiąć tag z banerem i dopisać Analytics w RODO / polityce prywatności.
