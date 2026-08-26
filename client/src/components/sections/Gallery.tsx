@@ -6,6 +6,7 @@ import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { ResponsivePhoto } from "@/components/ui/responsive-photo";
 
 export function Gallery() {
   const { t } = useTranslation();
@@ -36,11 +37,12 @@ export function Gallery() {
                 className="group block w-full overflow-hidden rounded-lg focus-visible:ring-ring ring-offset-background focus-visible:ring-2 focus-visible:outline-none"
                 onClick={() => setIndex(i)}
               >
-                <img
-                  src={item.src}
+                <ResponsivePhoto
+                  photo={item}
                   alt={t(item.altKey)}
                   className="ease-smooth h-28 w-full object-cover object-[center_18%] transition-transform duration-500 group-hover:scale-[1.06] md:h-32"
                   loading="lazy"
+                  sizes="(min-width: 768px) 20vw, 50vw"
                 />
               </button>
             </StaggerItem>

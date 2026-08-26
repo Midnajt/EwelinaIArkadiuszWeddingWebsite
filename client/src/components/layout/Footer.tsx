@@ -100,7 +100,7 @@ export function Footer() {
     return (
       <footer className="relative overflow-hidden border-t border-white/15 text-white">
         <img
-          src={images.restaurant}
+          src={images.restaurant.src}
           alt=""
           className="absolute inset-0 size-full object-cover object-[center_40%]"
           aria-hidden

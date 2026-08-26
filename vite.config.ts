@@ -2,6 +2,7 @@ import path from "node:path";
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+import { imagetools } from "vite-imagetools";
 
 const rootDir = import.meta.dirname;
 
@@ -12,7 +13,22 @@ export default defineConfig(({ mode }) => {
     root: path.resolve(rootDir, "client"),
     envDir: rootDir,
     base: env.VITE_BASE || "/",
-    plugins: [react(), tailwindcss()],
+    plugins: [
+      react(),
+      tailwindcss(),
+      imagetools({
+        defaultDirectives: (url) => {
+          if (url.searchParams.get("as") === "picture") {
+            return new URLSearchParams({
+              format: "avif;webp",
+              quality: "82",
+              w: "800;1280;1920",
+            });
+          }
+          return new URLSearchParams();
+        },
+      }),
+    ],
     resolve: {
       alias: {
         "@": path.resolve(rootDir, "client/src"),

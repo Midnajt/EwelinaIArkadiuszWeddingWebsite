@@ -7,6 +7,8 @@ Podmieniając plik zachowaj **tę samą nazwę**, albo zaktualizuj import w `cli
 
 Źródło: pełnowymiarowe JPG z `example_photos/` (do 6720 px / ~26 MB). Na stronę idzie kopia webowa: dłuższy bok **1920 px**, JPEG quality 85.
 
+Przy `npm run build` **vite-imagetools** (Sharp) robi z zdjęć AVIF + WebP i srcset 800 / 1280 / 1920 px (jakość 82). Oryginały w tym katalogu zostają bez zmian. Logotypy (`logo_*.png`) nie są konwertowane.
+
 | Plik | Zastosowanie | Kadr źródłowy |
 | --- | --- | --- |
 | `hero.png` | Hero (Paryż) + slider — para wieczorem, wieża Eiffla (desktop, ≥768 px) | z `assets_from_client/hero.png` |

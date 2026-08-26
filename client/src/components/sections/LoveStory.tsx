@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { images } from "@/config/assets";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
+import { ResponsivePhoto } from "@/components/ui/responsive-photo";
 
 export function LoveStory() {
   const { t } = useTranslation();
@@ -18,11 +19,12 @@ export function LoveStory() {
           {images.story.map((photo) => (
             <StaggerItem key={photo.src} scale>
               <figure className="group overflow-hidden rounded-xl">
-                <img
-                  src={photo.src}
+                <ResponsivePhoto
+                  photo={photo}
                   alt={t(photo.altKey)}
                   className="ease-smooth h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.06] md:h-80"
                   loading="lazy"
+                  sizes="(min-width: 640px) 30vw, 100vw"
                 />
               </figure>
             </StaggerItem>

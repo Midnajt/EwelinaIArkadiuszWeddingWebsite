@@ -15,9 +15,9 @@ export const heroPhotoOptions: readonly {
 ] as const;
 
 export const heroPhotos: Record<HeroPhotoId, PhotoItem> = {
-  beach: { src: images.beach, altKey: "photos.beach", objectPosition: "center 42%" },
+  beach: images.beach,
   paris: heroParisPhoto,
-  restaurant: { src: images.restaurant, altKey: "photos.restaurant", objectPosition: "center 40%" },
+  restaurant: images.restaurant,
 };
 
 export function isHeroPhotoId(value: string | null): value is HeroPhotoId {

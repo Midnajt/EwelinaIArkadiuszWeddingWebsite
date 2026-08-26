@@ -38,6 +38,9 @@ export function Hero() {
           photo={photo}
           alt={t(photo.altKey)}
           pictureClassName="absolute inset-0"
+          loading="eager"
+          fetchPriority="high"
+          sizes="100vw"
         />
         <div className="absolute inset-0" style={{ backgroundColor: "var(--hero-overlay)" }} />
         <div className="absolute inset-0 opacity-25" style={{ background: "var(--hero-glow)" }} />
