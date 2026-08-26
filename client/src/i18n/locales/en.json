@@ -32,6 +32,7 @@
     "ceremony": "Ceremony",
     "reception": "Reception",
     "time": "Time",
+    "receptionTime": "After the church",
     "address": "Address",
     "map": "Open map"
   },
@@ -51,7 +52,7 @@
     },
     "maps": {
       "title": "Maps and directions",
-      "text": "Navigate to the church in Spytkowice or the Przystań Kabanos venue.",
+      "text": "Navigate to the church in Spytkowice or Przystań Weselna Spytkowice.",
       "ceremony": "Ceremony map",
       "reception": "Reception map"
     },
@@ -99,7 +100,7 @@
       "gather": { "time": "13:30", "title": "Gather at the church", "text": "Guests meet at the parish church in Spytkowice." },
       "mass": { "time": "14:00", "title": "Mass and sacrament", "text": "Wedding at the Church of the Immaculate Conception of the Blessed Virgin Mary." },
       "exit": { "time": "15:30", "title": "Leaving the church", "text": "Photos, congratulations, then the drive to the venue in Spytkowice." },
-      "welcome": { "time": "16:30", "title": "Welcome at the venue", "text": "Bread, salt and the first toast at Przystań Kabanos." },
+      "welcome": { "time": "16:30", "title": "Welcome at the venue", "text": "Bread, salt and the first toast at Przystań Weselna Spytkowice." },
       "dinner": { "time": "17:30", "title": "Wedding dinner", "text": "A seated meal and speeches." },
       "dance": { "time": "20:00", "title": "First dance", "text": "We open the floor — then the party runs until morning." },
       "oczepiny": { "time": "00:00", "title": "Oczepiny", "text": "Traditional games and wishes for the new road." },
@@ -166,12 +167,12 @@
     "kicker": "Practicalities",
     "title": "Need to know",
     "subtitle": "Travel, shuttle, children and rooms in one place.",
-    "travel": { "title": "Getting there", "text": "The church and the reception are both in Spytkowice — a short drive from the parish (Spytkowice 21) to Przystań Kabanos (Spytkowice 625). Parking at the venue." },
+    "travel": { "title": "Getting there", "text": "The church and the reception are both in Spytkowice — a short drive from the parish (Spytkowice 21) to Przystań Weselna Spytkowice (Spytkowice 625). Parking at the venue." },
     "kids": { "title": "Children", "text": "Children are welcome. High chairs, a quiet corner and an animator in a side room." },
-    "stay": { "title": "Rooms", "text": "Rooms at Przystań Kabanos — request a stay in the attendance form; spaces are limited." },
+    "stay": { "title": "Rooms", "text": "Rooms at Przystań Weselna Spytkowice — request a stay in the attendance form; spaces are limited." },
     "bus": {
       "title": "Guest shuttle",
-      "text": "A hired 20-seat bus. 15:45 departure from the church in Spytkowice, at the venue around 16:20. Return from Przystań Kabanos at 3:45. Mark a seat in the attendance form."
+      "text": "A hired 20-seat bus. 15:45 departure from the church in Spytkowice, at the venue around 16:20. Return from Przystań Weselna Spytkowice at 3:45. Mark a seat in the attendance form."
     },
     "animator": {
       "title": "Children’s animator",
@@ -246,7 +247,7 @@
       },
       "three": {
         "name": "Cousin Krzysiek",
-        "text": "Przystań Kabanos, and the GPS led to Spytkowice. I stood in the car park looking for a harbour by the water. No harbour. The żurek in a bread bowl — that showed up."
+        "text": "Przystań Weselna, and the GPS led to Spytkowice. I stood in the car park looking for a harbour by the water. No harbour. The żurek in a bread bowl — that showed up."
       }
     }
   },

@@ -23,7 +23,7 @@ export function EventCards() {
       id: "wesele",
       label: t("events.reception"),
       name: en ? site.reception.nameEn : site.reception.namePl,
-      time: site.reception.time,
+      time: t("events.receptionTime"),
       address: site.reception.full,
       mapLink: site.reception.mapLink,
     },
@@ -51,8 +51,12 @@ export function EventCards() {
                   <p className="flex gap-3">
                     <Clock className="text-primary mt-0.5 size-5 shrink-0" />
                     <span>
-                      <span className="font-medium">{t("events.time")}</span>
-                      <br />
+                      {event.id !== "wesele" && (
+                        <>
+                          <span className="font-medium">{t("events.time")}</span>
+                          <br />
+                        </>
+                      )}
                       {event.time}
                     </span>
                   </p>

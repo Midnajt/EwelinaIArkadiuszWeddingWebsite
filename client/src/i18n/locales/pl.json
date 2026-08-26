@@ -32,6 +32,7 @@
     "ceremony": "Ślub",
     "reception": "Wesele",
     "time": "Godzina",
+    "receptionTime": "Po kościele",
     "address": "Adres",
     "map": "Otwórz mapę"
   },
@@ -51,7 +52,7 @@
     },
     "maps": {
       "title": "Mapy i dojazd",
-      "text": "Otwórz nawigację do kościoła w Spytkowicach lub sali weselnej „Przystań Kabanos”.",
+      "text": "Otwórz nawigację do kościoła w Spytkowicach lub sali weselnej Przystań Weselna Spytkowice.",
       "ceremony": "Mapa ślubu",
       "reception": "Mapa wesela"
     },
@@ -99,7 +100,7 @@
       "gather": { "time": "13:30", "title": "Zbiórka przy kościele", "text": "Goście zbierają się przy kościele w Spytkowicach." },
       "mass": { "time": "14:00", "title": "Msza święta i sakrament", "text": "Ślub w kościele pw. Niepokalanego Poczęcia NMP." },
       "exit": { "time": "15:30", "title": "Wyjście i życzenia", "text": "Zdjęcia, życzenia i przejazd na salę w Spytkowicach." },
-      "welcome": { "time": "16:30", "title": "Powitanie na sali", "text": "Chleb, sól i pierwszy toast w restauracji „Przystań Kabanos”." },
+      "welcome": { "time": "16:30", "title": "Powitanie na sali", "text": "Chleb, sól i pierwszy toast w Przystani Weselnej Spytkowice." },
       "dinner": { "time": "17:30", "title": "Obiad weselny", "text": "Uroczysta kolacja i przemówienia." },
       "dance": { "time": "20:00", "title": "Pierwszy taniec", "text": "Otwieramy parkiet — potem biesiada do rana." },
       "oczepiny": { "time": "00:00", "title": "Oczepiny", "text": "Tradycyjne zabawy i życzenia na nową drogę." },
@@ -166,12 +167,12 @@
     "kicker": "Organizacja",
     "title": "Sprawy organizacyjne",
     "subtitle": "Dojazd, bus, dzieci i nocleg — w jednym miejscu.",
-    "travel": { "title": "Dojazd", "text": "Kościół i sala weselna są w Spytkowicach — krótki przejazd między parafią (Spytkowice 21) a restauracją „Przystań Kabanos” (Spytkowice 625). Parking przy sali." },
+    "travel": { "title": "Dojazd", "text": "Kościół i sala weselna są w Spytkowicach — krótki przejazd między parafią (Spytkowice 21) a Przystanią Weselną Spytkowice (Spytkowice 625). Parking przy sali." },
     "kids": { "title": "Dzieci", "text": "Dzieci są mile widziane. Na sali są krzesełka, kącik na drzemkę i animator w osobnej salce." },
-    "stay": { "title": "Nocleg", "text": "Noclegi przy restauracji „Przystań Kabanos” — zgłoście nocleg w potwierdzeniu obecności, miejsc jest ograniczona liczba." },
+    "stay": { "title": "Nocleg", "text": "Noclegi przy Przystani Weselnej Spytkowice — zgłoście nocleg w potwierdzeniu obecności, miejsc jest ograniczona liczba." },
     "bus": {
       "title": "Bus dla gości",
-      "text": "Wynajęty 20-osobowy bus. O 15:45 odjazd sprzed kościoła w Spytkowicach, na salę ok. 16:20. Powrót z Przystani Kabanos o 3:45. Miejsce zaznaczcie w potwierdzeniu obecności."
+      "text": "Wynajęty 20-osobowy bus. O 15:45 odjazd sprzed kościoła w Spytkowicach, na salę ok. 16:20. Powrót z Przystani Weselnej Spytkowice o 3:45. Miejsce zaznaczcie w potwierdzeniu obecności."
     },
     "animator": {
       "title": "Animator dla dzieci",
@@ -246,7 +247,7 @@
       },
       "three": {
         "name": "Kuzyn Krzysiek",
-        "text": "Przystań Kabanos, a GPS prowadzi do Spytkowic. Stałem chwilę na parkingu i szukałem przystani nad wodą. Przystani nad wodą nie było. Żurek w chlebie — był."
+        "text": "Przystań Weselna, a GPS prowadzi do Spytkowic. Stałem chwilę na parkingu i szukałem przystani nad wodą. Przystani nad wodą nie było. Żurek w chlebie — był."
       }
     }
   },

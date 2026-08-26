@@ -51,8 +51,8 @@ export const site = {
       "https://www.google.com/maps/search/?api=1&query=Spytkowice+21,+34-745+Spytkowice",
   },
   reception: {
-    namePl: "Restauracja „Przystań Kabanos”",
-    nameEn: "Przystań Kabanos Restaurant",
+    namePl: "Przystań Weselna Spytkowice",
+    nameEn: "Przystań Weselna Spytkowice",
     time: "16:30",
     street: "Spytkowice 625",
     postal: "34-745",
@@ -60,9 +60,8 @@ export const site = {
     full: "Spytkowice 625, 34-745 Spytkowice",
     url: "https://przystanwkabanosie.pl",
     mapEmbed:
-      "https://maps.google.com/maps?q=Przysta%C5%84+w+Kabanosie+Spytkowice+625&hl=pl&z=17&output=embed",
-    mapLink:
-      "https://www.google.com/maps/search/?api=1&query=Przysta%C5%84+w+Kabanosie+Spytkowice+625",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.1837584628724!2d19.8485729!3d49.575422599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715dffd27afbb79%3A0xba39d971e71c3be0!2sPrzysta%C5%84%20Weselna%20Spytkowice!5e0!3m2!1spl!2spl!4v1787766111407!5m2!1spl!2spl",
+    mapLink: "https://maps.app.goo.gl/uJu6aCugbX5ZBVrs7",
   },
   witnesses: [
     {
