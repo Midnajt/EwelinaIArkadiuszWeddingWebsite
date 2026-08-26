@@ -35,8 +35,17 @@ export function ResponsivePhoto({
   sizes = "100vw",
 }: ResponsivePhotoProps) {
   const objectPosition = photo.objectPosition ?? "center 40%";
-  const imgClassName = cn("size-full object-cover", className);
-  const imgStyle: CSSProperties = { objectPosition, ...style };
+  const objectPositionMobile = photo.objectPositionMobile ?? objectPosition;
+  const { objectPosition: _objectPositionFromStyle, ...restStyle } = (style ?? {}) as CSSProperties;
+  const imgClassName = cn(
+    "size-full object-cover [object-position:var(--photo-object-position)] max-md:[object-position:var(--photo-object-position-mobile)]",
+    className,
+  );
+  const imgStyle = {
+    ...restStyle,
+    "--photo-object-position": _objectPositionFromStyle ?? objectPosition,
+    "--photo-object-position-mobile": objectPositionMobile,
+  } as CSSProperties;
   const desktopSources = orderedSources(photo.sources);
   const mobileSources = orderedSources(photo.mobileSources);
   const hasPicture =

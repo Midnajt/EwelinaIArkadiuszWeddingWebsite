@@ -28,7 +28,6 @@ export function Slider() {
                       photo={slide}
                       alt={t(slide.altKey)}
                       className="ease-smooth h-72 w-full transition-transform duration-500 group-hover:scale-[1.04] md:h-[32rem]"
-                      style={{ objectPosition: slide.objectPosition ?? "center 20%" }}
                       loading="lazy"
                       sizes="(min-width: 1280px) 1152px, 92vw"
                     />

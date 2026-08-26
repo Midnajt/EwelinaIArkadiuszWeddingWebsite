@@ -25,12 +25,13 @@ export type PhotoItem = {
   mobileSources?: Record<string, string>;
   altKey: string;
   objectPosition?: string;
+  objectPositionMobile?: string;
 };
 
 function fromPicture(
   picture: Picture,
   altKey: string,
-  options?: { mobile?: Picture; objectPosition?: string },
+  options?: { mobile?: Picture; objectPosition?: string; objectPositionMobile?: string },
 ): PhotoItem {
   return {
     src: picture.img.src,
@@ -41,6 +42,7 @@ function fromPicture(
     mobileSources: options?.mobile?.sources,
     altKey,
     objectPosition: options?.objectPosition,
+    objectPositionMobile: options?.objectPositionMobile,
   };
 }
 
@@ -49,9 +51,15 @@ export const heroParisPhoto = fromPicture(hero, "photos.hero", {
   objectPosition: "center 40%",
 });
 
+const beachPhoto = fromPicture(beach, "photos.beach", {
+  objectPosition: "center 42%",
+  // Landscape pair: on a tall mobile crop, center keeps the groom and clips the bride.
+  objectPositionMobile: "80% 42%",
+});
+
 export const images = {
   hero: heroParisPhoto,
-  beach: fromPicture(beach, "photos.beach", { objectPosition: "center 42%" }),
+  beach: beachPhoto,
   restaurant: fromPicture(restaurant, "photos.restaurant", { objectPosition: "center 40%" }),
   logoGold,
   ornament,
@@ -61,7 +69,7 @@ export const images = {
     fromPicture(brideSmile, "photos.brideSmile"),
   ] satisfies readonly PhotoItem[],
   slider: [
-    fromPicture(beach, "photos.beach", { objectPosition: "center 42%" }),
+    beachPhoto,
     { ...heroParisPhoto, objectPosition: "center 48%" },
     fromPicture(restaurant, "photos.restaurant", { objectPosition: "center 40%" }),
   ] satisfies readonly PhotoItem[],
