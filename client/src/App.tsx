@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { Navbar } from "@/components/layout/Navbar";
-import { ThemeBar } from "@/components/layout/ThemeBar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { EventCards } from "@/components/sections/EventCards";
-// import { GuestEssentials } from "@/components/sections/GuestEssentials";
+import { GuestEssentials } from "@/components/sections/GuestEssentials";
+import { Lodging } from "@/components/sections/Lodging";
 import { CountdownDays } from "@/components/sections/CountdownDays";
 // import { LoveStory } from "@/components/sections/LoveStory";
-import { Slider } from "@/components/sections/Slider";
+// import { Slider } from "@/components/sections/Slider";
 // import { DayTimeline } from "@/components/sections/DayTimeline";
 // import { TablePlan } from "@/components/sections/TablePlan";
 // import { WeddingMenu } from "@/components/sections/WeddingMenu";
@@ -29,10 +29,11 @@ function HomePage() {
     <main id="content">
       <Hero />
       <EventCards />
-      {/* <GuestEssentials /> */}
+      <GuestEssentials />
+      <Lodging />
       <CountdownDays />
       {/* <LoveStory /> */}
-      <Slider />
+      {/* <Slider /> */}
       {/* <DayTimeline /> */}
       {/* <TablePlan /> */}
       {/* <WeddingMenu /> */}
@@ -61,7 +62,6 @@ export default function App() {
         {t("common.skip")}
       </a>
       <div className="sticky top-0 z-40">
-        <ThemeBar />
         <Navbar />
       </div>
       {view === "rodo" ? <RodoPage /> : view === "privacy" ? <PrivacyPage /> : <HomePage />}

@@ -1,5 +1,4 @@
-import { densityClass } from "@/config/theme";
-import { useTheme } from "@/lib/theme-provider";
+import { sectionDensityClass } from "@/config/theme";
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
 import { FloralDivider } from "@/components/layout/FloralDivider";
@@ -12,31 +11,24 @@ type SectionProps = {
 };
 
 export function Section({ id, className, children }: SectionProps) {
-  const { preset } = useTheme();
-
   return (
-    <section
-      id={id}
-      className={cn(
-        preset.surface === "glass" ? "bg-transparent" : "bg-background",
-        densityClass(preset.density),
-        className,
-      )}
-    >
+    <section id={id} className={cn("bg-background", sectionDensityClass, className)}>
       {children}
     </section>
   );
 }
 
 export function Container({
+  id,
   className,
   children,
 }: {
+  id?: string;
   className?: string;
   children: ReactNode;
 }) {
   return (
-    <div className={cn("mx-auto w-full max-w-6xl px-4 sm:px-6", className)}>
+    <div id={id} className={cn("mx-auto w-full max-w-6xl px-4 sm:px-6", className)}>
       {children}
     </div>
   );

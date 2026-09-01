@@ -31,7 +31,7 @@ export function EventCards() {
 
   return (
     <Section id="slub">
-      <Container>
+      <Container id="slub-tresc">
         <SectionHeader
           kicker={t("events.kicker")}
           title={t("events.title")}
@@ -40,7 +40,7 @@ export function EventCards() {
         <Stagger className="grid gap-6 md:grid-cols-2">
           {events.map((event) => (
             <StaggerItem key={event.id} hover>
-              <Card id={event.id === "wesele" ? "wesele" : undefined} className="bg-card h-full">
+              <Card id={event.id === "wesele" ? "wesele" : "karta-slub"} className="bg-card h-full">
                 <CardHeader>
                   <p className="text-primary text-xs font-medium tracking-widest uppercase">
                     {event.label}

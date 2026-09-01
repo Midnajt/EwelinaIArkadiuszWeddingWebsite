@@ -6,6 +6,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { scrollToNavHash } from "@/lib/scroll-to-section";
 
 export type AppView = "home" | "rodo" | "privacy";
 
@@ -45,8 +46,10 @@ export function HashViewProvider({ children }: { children: ReactNode }) {
       return;
     }
     if (!state.section) return;
-    const el = document.getElementById(state.section);
-    el?.scrollIntoView({ behavior: "smooth" });
+    const frame = window.requestAnimationFrame(() => {
+      scrollToNavHash(`#${state.section}`);
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, [state]);
 
   const value = useMemo(() => state, [state]);

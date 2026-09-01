@@ -2,33 +2,18 @@ import { motion, useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { images } from "@/config/assets";
 import { site } from "@/config/site";
-import { getMotionProfile } from "@/lib/motion";
-import { useHeroPhoto } from "@/lib/hero-photo-provider";
-import { useTheme } from "@/lib/theme-provider";
+import { motionProfile } from "@/lib/motion";
 import { ResponsivePhoto } from "@/components/ui/responsive-photo";
-import { cn } from "@/lib/utils";
-import { getWeddingDateState } from "@/lib/wedding-date";
 
 export function Hero() {
   const { t } = useTranslation();
   const reduce = useReducedMotion();
-  const { presetId } = useTheme();
-  const { photoId, photo } = useHeroPhoto();
-  const motionProfile = getMotionProfile(presetId);
+  const photo = images.hero;
   const words = site.name.split(" ");
-  const { phase } = getWeddingDateState(site.weddingDate);
-  const boho = presetId === "boho";
-  // CTA w hero wyłączone (Niezbędnik, RSVP, plan dnia)
-  // const primaryAction =
-  //   phase === "after"
-  //     ? { href: "#galeria", label: t("hero.ctaGallery"), icon: Images }
-  //     : { href: "#niezbednik", label: t("hero.ctaEssentials"), icon: Info };
-  // const secondaryAction = null;
 
   return (
     <section className="relative min-h-[88vh] overflow-hidden">
       <motion.div
-        key={`${presetId}-${photoId}`}
         className="absolute inset-0 z-0"
         initial={reduce ? false : { scale: motionProfile.kenBurns.fromScale }}
         animate={{ scale: 1 }}
@@ -47,7 +32,7 @@ export function Hero() {
       </motion.div>
 
       <div className="relative z-10 mx-auto flex min-h-[88vh] max-w-6xl flex-col items-center justify-center px-4 py-24 text-center text-white sm:px-6">
-        <div className="hero-panel flex max-w-3xl flex-col items-center">
+        <div className="flex max-w-3xl flex-col items-center">
           <motion.p
             className="text-sm font-medium tracking-[0.35em] uppercase text-white/85"
             initial={reduce ? false : { opacity: 0, y: -16 }}
@@ -75,15 +60,22 @@ export function Hero() {
             ))}
           </motion.h1>
 
-          <motion.p
-            className="mt-5 max-w-xl text-base text-white/90 md:text-lg"
+          <motion.div
+            className="mt-5 max-w-2xl space-y-3 text-sm leading-relaxed text-white/90 md:text-base"
             variants={motionProfile.fadeUp}
             initial={reduce ? false : "hidden"}
             animate="show"
             transition={{ delay: 0.9 }}
           >
-            {t(`hero.subtitle.${phase}`)}
-          </motion.p>
+            <p>{t("hero.invite.lead")}</p>
+            <p>{t("hero.invite.body")}</p>
+            <p>
+              {t("hero.invite.signoff")}{" "}
+              <span className="inline-block brightness-0 invert" aria-hidden>
+                ❤️
+              </span>
+            </p>
+          </motion.div>
 
           <motion.div
             variants={motionProfile.fadeUp}
@@ -92,33 +84,11 @@ export function Hero() {
             transition={{ delay: 1 }}
           >
             <img
-              src={boho ? images.ornament : images.logoGold}
+              src={images.ornament}
               alt=""
-              className={cn(
-                "mx-auto mt-8 h-20 w-auto max-w-[min(100%,16rem)] object-contain md:h-28",
-                boho ? "invert" : "mix-blend-screen",
-              )}
+              className="mx-auto mt-8 h-20 w-auto max-w-[min(100%,16rem)] object-contain invert md:h-28"
             />
           </motion.div>
-
-          {/* CTA wyłączone — Niezbędnik gościa
-          <motion.div
-            className="mt-8 flex flex-wrap justify-center gap-3"
-            variants={motionProfile.fadeUp}
-            initial={reduce ? false : "hidden"}
-            animate="show"
-            transition={{ delay: 1.1 }}
-          >
-            <motion.div whileHover={reduce ? undefined : motionProfile.hoverGlow} whileTap={{ scale: 0.97 }}>
-              <Button asChild size="lg">
-                <a href={primaryAction.href}>
-                  <PrimaryIcon />
-                  {primaryAction.label}
-                </a>
-              </Button>
-            </motion.div>
-          </motion.div>
-          */}
         </div>
       </div>
 

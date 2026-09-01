@@ -3,6 +3,8 @@
     "home": "Strona główna",
     "ceremony": "Ślub",
     "reception": "Wesele",
+    "essentials": "Niezbędnik",
+    "lodging": "Nocleg",
     "story": "Historia",
     "schedule": "Plan dnia",
     "gallery": "Galeria",
@@ -14,10 +16,10 @@
   "hero": {
     "kicker": "27 listopada 2026",
     "title": "Ewelina & Arkadiusz",
-    "subtitle": {
-      "before": "Już wkrótce spotkamy się na mszy i weselu w Spytkowicach.",
-      "today": "To już dziś — czekamy na Was w Spytkowicach, najpierw w kościele, a później na sali.",
-      "after": "Dziękujemy, że byliście z nami — msza i wesele w Spytkowicach."
+    "invite": {
+      "lead": "Miłość najlepiej świętuje się w gronie najbliższych.",
+      "body": "Dlatego z ogromną radością zapraszamy Was do wspólnego przeżywania dnia, w którym powiemy sobie „tak”. Wasza obecność jest dla nas najpiękniejszym prezentem i sprawi, że ten dzień będzie jeszcze bardziej wyjątkowy.",
+      "signoff": "Z serdecznością, Ewelina i Arkadiusz"
     },
     "ctaGallery": "Zobacz zdjęcia",
     "ctaRsvp": "Potwierdź obecność",
@@ -39,7 +41,21 @@
   "essentials": {
     "kicker": "Ważne pod ręką",
     "title": "Niezbędnik gościa",
-    "subtitle": "Plan, transport, mapy i kontakt — najważniejsze informacje w jednym miejscu.",
+    "subtitle": "Transport, mapy i zapis daty w kalendarzu — najważniejsze informacje w jednym miejscu.",
+    "stay": {
+      "kicker": "Dla gości nocujących",
+      "title": "Nocleg",
+      "subtitle": "Obiekt około 10 km od sali weselnej — śniadanie, godziny zameldowania i kontakt do menadżerki.",
+      "distance": "Obiekt leży około 10 km od sali weselnej — dojazd zajmuje około 13 minut.",
+      "breakfast": "Śniadanie jest w cenie pobytu. W piątek i sobotę serwowane jest w godzinach {{from}}–{{to}}.",
+      "checkInLabel": "Zameldowanie",
+      "checkIn": "Od godziny 16:00. Przy wcześniejszym przyjeździe prosimy o kontakt z menadżerką obiektu.",
+      "checkOutLabel": "Wymeldowanie",
+      "checkOut": "Do godziny 15:00.",
+      "managerNote": "Menadżerka obiektu — wcześniejszy przyjazd i przedłużenie pobytu:",
+      "extend": "Pobyt obejmuje dwie doby. Jeśli ktoś chciałby zostać dłużej, prosimy o bezpośredni kontakt z menadżerką.",
+      "map": "Otwórz mapę noclegu"
+    },
     "schedule": {
       "title": "Plan dnia",
       "text": "Sprawdź godziny ceremonii, przyjęcia i najważniejszych punktów wieczoru.",
@@ -47,14 +63,14 @@
     },
     "bus": {
       "title": "Bus dla gości",
-      "text": "Odjazd sprzed kościoła o 15:45, powrót z sali o 3:45.",
-      "action": "Sprawdź transport"
+      "text": "Przez całe wesele do Waszej dyspozycji będą dwa 9-osobowe busy, kursujące od {{from}} do samego rana. Zapewnią one transport do hoteli, miejsc noclegowych oraz domów, tak aby każdy mógł bezpiecznie wrócić po wspólnej zabawie."
     },
     "maps": {
       "title": "Mapy i dojazd",
-      "text": "Otwórz nawigację do kościoła w Spytkowicach lub sali weselnej Przystań Weselna Spytkowice.",
-      "ceremony": "Mapa ślubu",
-      "reception": "Mapa wesela"
+      "text": "Otwórz nawigację do kościoła, sali weselnej lub noclegu.",
+      "ceremony": "Kościół",
+      "reception": "Sala weselna",
+      "lodging": "Nocleg"
     },
     "contact": {
       "title": "Szybki kontakt",
@@ -324,7 +340,7 @@
   },
   "cookies": {
     "title": "Zgoda na pliki cookies i przetwarzanie danych",
-    "text": "Na ewelinaiarkadiusz.pl korzystamy wyłącznie z niezbędnych plików cookies: zgoda na baner, język (PL/EN), wybrany motyw oraz zdjęcie w nagłówku. Szczegóły w RODO i polityce prywatności.",
+    "text": "Na ewelinaiarkadiusz.pl korzystamy wyłącznie z niezbędnych plików cookies: zgoda na baner oraz język (PL/EN). Szczegóły w RODO i polityce prywatności.",
     "accept": "Akceptuję",
     "checkbox": "Wyrażam zgodę na wykorzystywanie plików cookies oraz przetwarzanie danych osobowych w celach opisanych w dokumentach RODO i polityki prywatności."
   },
@@ -334,17 +350,8 @@
     "rodoTitle": "Informacja RODO",
     "privacyTitle": "Polityka prywatności"
   },
-  "theme": {
-    "lang": "Język",
-    "bar": "Wybór motywu",
-    "change": "Zmień motyw:",
-    "photoBar": "Wybór zdjęcia w nagłówku",
-    "choosePhoto": "Wybierz zdjęcie:",
-    "photoBeach": "Plaża",
-    "photoParis": "Paryż",
-    "photoRestaurant": "Restauracja"
-  },
   "common": {
-    "skip": "Przejdź do treści"
+    "skip": "Przejdź do treści",
+    "lang": "Język"
   }
 }

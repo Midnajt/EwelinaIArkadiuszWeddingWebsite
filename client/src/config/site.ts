@@ -47,8 +47,7 @@ export const site = {
     full: "Spytkowice 21, 34-745 Spytkowice",
     mapEmbed:
       "https://maps.google.com/maps?q=Spytkowice+21,+34-745+Spytkowice&hl=pl&z=17&output=embed",
-    mapLink:
-      "https://www.google.com/maps/search/?api=1&query=Spytkowice+21,+34-745+Spytkowice",
+    mapLink: "https://maps.app.goo.gl/2DHPKjdKTAreaYsi9",
   },
   reception: {
     namePl: "Przystań Weselna Spytkowice",
@@ -62,6 +61,25 @@ export const site = {
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.1837584628724!2d19.8485729!3d49.575422599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715dffd27afbb79%3A0xba39d971e71c3be0!2sPrzysta%C5%84%20Weselna%20Spytkowice!5e0!3m2!1spl!2spl!4v1787766111407!5m2!1spl!2spl",
     mapLink: "https://maps.app.goo.gl/uJu6aCugbX5ZBVrs7",
+  },
+  lodging: {
+    mapLink: "https://maps.app.goo.gl/LRN6tb7x2QshGbnF7",
+    distanceKm: 10,
+    driveMinutes: 13,
+    checkIn: "16:00",
+    checkOut: "15:00",
+    breakfastFrom: "7:30",
+    breakfastTo: "11:00",
+    manager: {
+      name: "Ewa Pilch",
+      phone: "600 309 929",
+      phoneHref: "tel:+48600309929",
+    },
+  },
+  transport: {
+    vans: 2,
+    seats: 9,
+    from: "15:00",
   },
   witnesses: [
     {

@@ -64,6 +64,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
   }
 
   body {
@@ -85,95 +86,17 @@
   .ease-smooth {
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   }
-}
 
-html[data-theme="love"] {
-  background-color: #fbf6f3;
-  background-image:
-    radial-gradient(58% 42% at 8% 0%, rgba(114, 32, 21, 0.08), transparent 58%),
-    radial-gradient(48% 40% at 92% 100%, rgba(143, 46, 28, 0.06), transparent 62%);
-  background-attachment: fixed;
-}
-
-html[data-theme="love"] body {
-  background-color: transparent;
-}
-
-html[data-theme="noirGold"] {
-  color-scheme: dark;
-  --gold-metallic: linear-gradient(105deg, #e8d48a 0%, #c9a227 52%, #8b6914 100%);
-  --gold-metallic-hover: linear-gradient(105deg, #f0e0a0 0%, #d4af37 50%, #9a7618 100%);
-  --gold-figure: linear-gradient(
-    180deg,
-    #7a5014 0%,
-    #e8c547 16%,
-    #fff6c8 38%,
-    #ffd700 50%,
-    #d4af37 68%,
-    #8b5a12 88%,
-    #5c3a12 100%
-  );
-  background-color: #0b0b0b;
-  background-image:
-    radial-gradient(58% 42% at 8% 0%, rgba(201, 162, 39, 0.18), transparent 58%),
-    radial-gradient(48% 40% at 92% 100%, rgba(201, 162, 39, 0.12), transparent 62%),
-    linear-gradient(180deg, #0b0b0b 0%, #14110c 48%, #0b0b0b 100%);
-  background-attachment: fixed;
-}
-
-html[data-theme="noirGold"] body {
-  background-color: transparent;
-}
-
-html[data-theme="noirGold"] header,
-html[data-theme="noirGold"] [data-slot="card"],
-html[data-theme="noirGold"] [data-slot="sheet-content"],
-html[data-theme="noirGold"] [data-slot="dialog-content"],
-html[data-theme="noirGold"] [data-slot="cookie-banner"],
-html[data-theme="noirGold"] [data-slot="theme-bar"],
-html[data-theme="noirGold"] [data-slot="glass-panel"] {
-  background-color: color-mix(in srgb, var(--card) 42%, transparent);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-color: color-mix(in srgb, var(--primary) 42%, transparent);
-  box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.45),
-    inset 0 1px 0 rgba(245, 230, 200, 0.12);
-}
-
-html[data-theme="noirGold"] .bg-muted\/40 {
-  background-color: color-mix(in srgb, var(--muted) 32%, transparent);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-
-html[data-theme="noirGold"] [data-slot="button"].bg-primary,
-html[data-theme="noirGold"] [data-slot="button"].bg-primary:hover,
-html[data-theme="noirGold"] [data-slot="partners-fab"],
-html[data-theme="noirGold"] [data-slot="partners-fab"]:hover {
-  border: none;
-  background-color: transparent;
-  background-image: var(--gold-metallic);
-  background-size: 140% 100%;
-  background-position: 0% 50%;
-  color: var(--primary-foreground);
-  box-shadow: 0 8px 22px rgba(201, 162, 39, 0.28);
-  text-shadow: none;
-}
-
-html[data-theme="noirGold"] [data-slot="button"].bg-primary:hover,
-html[data-theme="noirGold"] [data-slot="partners-fab"]:hover {
-  background-image: var(--gold-metallic-hover);
-  background-position: 88% 50%;
-}
-
-html[data-theme="noirGold"] [data-slot="countdown-figure"] {
-  background-image: var(--gold-figure);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 6px 18px rgba(201, 162, 39, 0.38));
+  /* Soft fade between neighboring `bg-background` sections and a muted band. */
+  .bg-muted-section-fade {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 0%,
+      color-mix(in srgb, var(--muted) 40%, var(--background)) 16%,
+      color-mix(in srgb, var(--muted) 40%, var(--background)) 84%,
+      var(--background) 100%
+    );
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

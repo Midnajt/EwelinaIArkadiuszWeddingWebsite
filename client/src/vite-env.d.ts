@@ -24,7 +24,6 @@ declare module "*.png?url" {
 }
 
 interface ImportMetaEnv {
-  readonly VITE_SHOW_DEV_PANEL?: string;
   readonly VITE_BASE?: string;
   readonly VITE_GA_MEASUREMENT_ID?: string;
 }

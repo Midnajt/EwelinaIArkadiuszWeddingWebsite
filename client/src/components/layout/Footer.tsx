@@ -1,19 +1,16 @@
 import { useTranslation } from "react-i18next";
-import { images } from "@/config/assets";
 import { site } from "@/config/site";
-import { useTheme } from "@/lib/theme-provider";
+import { goToNavHash } from "@/lib/scroll-to-section";
 import { cn } from "@/lib/utils";
 
 export function Footer() {
   const { t } = useTranslation();
-  const { presetId } = useTheme();
-  const prestige = presetId === "noirGold";
   const year = new Date().getFullYear();
-  const muted = prestige ? "text-white/80" : "text-primary-foreground/75";
-  const linkHover = prestige ? "hover:text-white" : "hover:text-primary-foreground";
+  const muted = "text-primary-foreground/75";
+  const linkHover = "hover:text-primary-foreground";
 
-  const body = (
-    <>
+  return (
+    <footer className="bg-primary text-primary-foreground border-t border-primary-foreground/15">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
           <p className="font-heading text-lg font-semibold">{site.name}</p>
@@ -24,41 +21,44 @@ export function Footer() {
           <p className="text-sm font-medium">{t("nav.home")}</p>
           <ul className={cn("mt-3 space-y-2 text-sm", muted)}>
             <li>
-              <a className={linkHover} href="#slub">
+              <a
+                className={linkHover}
+                href="#slub"
+                onClick={(event) => {
+                  event.preventDefault();
+                  goToNavHash("#slub");
+                }}
+              >
                 {t("nav.ceremony")}
               </a>
             </li>
             <li>
-              <a className={linkHover} href="#wesele">
+              <a
+                className={linkHover}
+                href="#wesele"
+                onClick={(event) => {
+                  event.preventDefault();
+                  goToNavHash("#wesele");
+                }}
+              >
                 {t("nav.reception")}
               </a>
             </li>
-            {/* RSVP wyłączone
             <li>
-              <a className={linkHover} href="#rsvp">
-                {t("nav.rsvp")}
+              <a className={linkHover} href="#niezbednik">
+                {t("nav.essentials")}
               </a>
             </li>
-            */}
-            {/* Galeria wyłączona
             <li>
-              <a className={linkHover} href="#galeria">
-                {t("nav.gallery")}
+              <a className={linkHover} href="#nocleg">
+                {t("nav.lodging")}
               </a>
             </li>
-            */}
             <li>
               <a className={linkHover} href="#kontakt">
                 {t("nav.contact")}
               </a>
             </li>
-            {/* Polecamy wyłączone
-            <li>
-              <a className={linkHover} href="#polecamy">
-                {t("partners.title")}
-              </a>
-            </li>
-            */}
           </ul>
         </div>
         <div>
@@ -77,12 +77,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div
-        className={cn(
-          "mx-auto max-w-6xl border-t px-4 py-6 text-xs sm:px-6",
-          prestige ? "border-white/20 text-white/70" : "border-primary-foreground/15 text-primary-foreground/70",
-        )}
-      >
+      <div className="mx-auto max-w-6xl border-t border-primary-foreground/15 px-4 py-6 text-xs text-primary-foreground/70 sm:px-6">
         <p>
           © {year} {site.legalName} · {t("footer.rights")}
         </p>
@@ -93,26 +88,6 @@ export function Footer() {
           </a>
         </p>
       </div>
-    </>
-  );
-
-  if (prestige) {
-    return (
-      <footer className="relative overflow-hidden border-t border-white/15 text-white">
-        <img
-          src={images.restaurant.src}
-          alt=""
-          className="absolute inset-0 size-full object-cover object-[center_40%]"
-          aria-hidden
-        />
-        <div className="relative bg-black/45 backdrop-blur-xl">{body}</div>
-      </footer>
-    );
-  }
-
-  return (
-    <footer className="bg-primary text-primary-foreground border-t border-primary-foreground/15">
-      {body}
     </footer>
   );
 }

@@ -3,6 +3,8 @@
     "home": "Home",
     "ceremony": "Ceremony",
     "reception": "Reception",
+    "essentials": "Essentials",
+    "lodging": "Stay",
     "story": "Our story",
     "schedule": "Schedule",
     "gallery": "Gallery",
@@ -14,10 +16,10 @@
   "hero": {
     "kicker": "27 November 2026",
     "title": "Ewelina & Arkadiusz",
-    "subtitle": {
-      "before": "We will soon meet for mass and the reception in Spytkowice.",
-      "today": "Today is the day — meet us in Spytkowice, first at the church, then at the venue.",
-      "after": "Thank you for celebrating with us — the mass and the party in Spytkowice."
+    "invite": {
+      "lead": "Love is best celebrated with those closest to us.",
+      "body": "That is why we are overjoyed to invite you to share the day we say “yes” to each other. Your presence is the most beautiful gift and will make this day even more special.",
+      "signoff": "With love, Ewelina and Arkadiusz"
     },
     "ctaGallery": "See photos",
     "ctaRsvp": "Confirm attendance",
@@ -39,7 +41,21 @@
   "essentials": {
     "kicker": "Keep it handy",
     "title": "Guest essentials",
-    "subtitle": "Schedule, transport, maps and contacts — the key details in one place.",
+    "subtitle": "Transport, maps and a calendar file — the key details in one place.",
+    "stay": {
+      "kicker": "For overnight guests",
+      "title": "Accommodation",
+      "subtitle": "About 10 km from the reception venue — breakfast, check-in hours and the property manager's contact.",
+      "distance": "The lodging is about 10 km from the reception venue — the drive takes around 13 minutes.",
+      "breakfast": "Breakfast is included. It is served on Friday and Saturday from {{from}} to {{to}}.",
+      "checkInLabel": "Check-in",
+      "checkIn": "From 16:00. If you plan to arrive earlier, please contact the property manager first.",
+      "checkOutLabel": "Check-out",
+      "checkOut": "By 15:00.",
+      "managerNote": "Property manager — early arrival and longer stays:",
+      "extend": "The stay covers two nights. To stay longer, please contact the manager directly.",
+      "map": "Open lodging map"
+    },
     "schedule": {
       "title": "Day schedule",
       "text": "Check the ceremony, reception and key moments of the evening.",
@@ -47,14 +63,14 @@
     },
     "bus": {
       "title": "Guest shuttle",
-      "text": "Leaves the church at 15:45 and returns from the venue at 3:45.",
-      "action": "Check transport"
+      "text": "Throughout the wedding two 9-seater minibuses will be at your disposal, running from {{from}} until the early morning. They will take guests to hotels, lodging and homes, so everyone can get back safely after the celebration."
     },
     "maps": {
       "title": "Maps and directions",
-      "text": "Navigate to the church in Spytkowice or Przystań Weselna Spytkowice.",
-      "ceremony": "Ceremony map",
-      "reception": "Reception map"
+      "text": "Navigate to the church, the reception venue or the lodging.",
+      "ceremony": "Church",
+      "reception": "Reception hall",
+      "lodging": "Stay"
     },
     "contact": {
       "title": "Quick contact",
@@ -324,7 +340,7 @@
   },
   "cookies": {
     "title": "Cookie and data-processing consent",
-    "text": "On ewelinaiarkadiusz.pl we use essential cookies only: banner consent, language (PL/EN), the selected theme and the header photo. Details are in the GDPR notice and privacy policy.",
+    "text": "On ewelinaiarkadiusz.pl we use essential cookies only: banner consent and language (PL/EN). Details are in the GDPR notice and privacy policy.",
     "accept": "Accept",
     "checkbox": "I agree to cookies and to personal-data processing for the purposes described in the GDPR notice and privacy policy."
   },
@@ -334,17 +350,8 @@
     "rodoTitle": "GDPR notice",
     "privacyTitle": "Privacy policy"
   },
-  "theme": {
-    "lang": "Language",
-    "bar": "Choose a theme",
-    "change": "Change theme:",
-    "photoBar": "Choose a header photo",
-    "choosePhoto": "Choose photo:",
-    "photoBeach": "Beach",
-    "photoParis": "Paris",
-    "photoRestaurant": "Restaurant"
-  },
   "common": {
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "lang": "Language"
   }
 }

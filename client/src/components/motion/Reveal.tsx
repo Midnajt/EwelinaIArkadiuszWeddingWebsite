@@ -1,7 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
-import { getMotionProfile, staggerContainer, viewportHeader, viewportOnce } from "@/lib/motion";
-import { useTheme } from "@/lib/theme-provider";
+import { motionProfile, staggerContainer, viewportHeader, viewportOnce } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 type RevealProps = {
@@ -12,8 +11,6 @@ type RevealProps = {
 
 export function Reveal({ className, children, delay = 0 }: RevealProps) {
   const reduce = useReducedMotion();
-  const { presetId } = useTheme();
-  const motionProfile = getMotionProfile(presetId);
 
   return (
     <motion.div
@@ -75,8 +72,6 @@ export function StaggerItem({
   as = "div",
 }: StaggerItemProps) {
   const reduce = useReducedMotion();
-  const { presetId } = useTheme();
-  const motionProfile = getMotionProfile(presetId);
   const shared = {
     className: cn(hover && "h-full rounded-xl", className),
     variants: scale ? motionProfile.scaleItem : motionProfile.staggerItem,

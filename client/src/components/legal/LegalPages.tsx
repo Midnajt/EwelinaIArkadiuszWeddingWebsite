@@ -59,7 +59,7 @@ export function RodoPage() {
       <p>
         Serwis informuje gości o ślubie i weselu. Nie zbieramy danych przez formularze ani nie
         wysyłamy ich na serwer. W przeglądarce mogą być zapisane wyłącznie niezbędne dane lokalne:
-        zgoda na pliki cookies, wybrany język, wybrany motyw oraz zdjęcie w nagłówku. Podstawą jest zgoda (art. 6 ust. 1
+        zgoda na pliki cookies oraz wybrany język. Podstawą jest zgoda (art. 6 ust. 1
         lit. a RODO) oraz uzasadniony interes administratora polegający na prowadzeniu strony
         informacyjnej o uroczystości (lit. f).
       </p>
@@ -91,8 +91,8 @@ export function PrivacyPage() {
         <a className="underline" href={site.url}>
           {host}
         </a>{" "}
-        ({site.name}) wykorzystuje wyłącznie niezbędne pliki cookies: zapamiętanie zgody na baner,
-        wybranego języka (PL/EN), motywu kolorystycznego oraz zdjęcia w nagłówku. Nie ładujemy narzędzi analitycznych
+        ({site.name}) wykorzystuje wyłącznie niezbędne pliki cookies: zapamiętanie zgody na baner
+        oraz wybranego języka (PL/EN). Nie ładujemy narzędzi analitycznych
         ani reklamowych.
       </p>
       <p>

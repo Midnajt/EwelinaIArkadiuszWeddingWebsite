@@ -1,23 +1,17 @@
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu } from "lucide-react";
 import { images } from "@/config/assets";
 import { site } from "@/config/site";
+import { goToNavHash } from "@/lib/scroll-to-section";
 import { Button } from "@/components/ui/button";
-import { useTheme } from "@/lib/theme-provider";
-import { cn } from "@/lib/utils";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const LINKS = [
   { href: "#slub", key: "nav.ceremony" },
   { href: "#wesele", key: "nav.reception" },
+  { href: "#niezbednik", key: "nav.essentials" },
+  { href: "#nocleg", key: "nav.lodging" },
   // { href: "#historia", key: "nav.story" },
   // { href: "#plan", key: "nav.schedule" },
   // { href: "#galeria", key: "nav.gallery" },
@@ -27,25 +21,27 @@ const LINKS = [
 const sheetLinkClass =
   "rounded-md px-2 py-3 text-base transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:bg-accent focus-visible:text-accent-foreground focus-visible:outline-none";
 
+const SHEET_CLOSE_MS = 400;
+
 export function Navbar() {
   const { t, i18n } = useTranslation();
-  const { presetId } = useTheme();
-  const prestige = presetId === "noirGold";
   const [open, setOpen] = useState(false);
 
   const toggleLang = () => {
     void i18n.changeLanguage(i18n.language === "pl" ? "en" : "pl");
   };
 
+  const onNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string, fromSheet: boolean) => {
+    event.preventDefault();
+    if (fromSheet) setOpen(false);
+    window.setTimeout(() => goToNavHash(href), fromSheet ? SHEET_CLOSE_MS : 0);
+  };
+
   return (
     <header className="bg-background/90 border-b backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <a href="#top" className="flex shrink-0 items-center" aria-label={site.name}>
-          <img
-            src={prestige ? images.logoGold : images.ornament}
-            alt=""
-            className={cn("h-12 w-auto object-contain", prestige && "mix-blend-screen")}
-          />
+          <img src={images.ornament} alt="" className="h-12 w-auto object-contain" />
         </a>
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Główne">
           {LINKS.map((link) => (
@@ -53,13 +49,14 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className="text-muted-foreground hover:text-foreground text-sm font-medium transition-colors"
+              onClick={(event) => onNavClick(event, link.href, false)}
             >
               {t(link.key)}
             </a>
           ))}
         </nav>
         <div className="flex items-center gap-1">
-          <Button variant="ghost" size="sm" onClick={toggleLang} aria-label={t("theme.lang")}>
+          <Button variant="ghost" size="sm" onClick={toggleLang} aria-label={t("common.lang")}>
             {i18n.language === "pl" ? "EN" : "PL"}
           </Button>
           {/* RSVP wyłączone
@@ -73,32 +70,21 @@ export function Navbar() {
                 <Menu />
               </Button>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent onCloseAutoFocus={(event) => event.preventDefault()}>
               <SheetHeader>
                 <SheetTitle>{site.name}</SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col gap-2 px-4" aria-label={t("nav.menu")}>
                 {LINKS.map((link) => (
-                  <SheetClose asChild key={link.href}>
-                    <a href={link.href} className={sheetLinkClass}>
-                      {t(link.key)}
-                    </a>
-                  </SheetClose>
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className={sheetLinkClass}
+                    onClick={(event) => onNavClick(event, link.href, true)}
+                  >
+                    {t(link.key)}
+                  </a>
                 ))}
-                {/* Polecamy wyłączone
-                <SheetClose asChild>
-                  <a href="#polecamy" className={sheetLinkClass}>
-                    {t("partners.title")}
-                  </a>
-                </SheetClose>
-                */}
-                {/* RSVP wyłączone
-                <SheetClose asChild>
-                  <a href="#rsvp" className={sheetLinkClass}>
-                    {t("nav.rsvp")}
-                  </a>
-                </SheetClose>
-                */}
               </nav>
             </SheetContent>
           </Sheet>
