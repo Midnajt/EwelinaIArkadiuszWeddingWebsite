@@ -48,7 +48,8 @@ function fromPicture(
 
 export const heroParisPhoto = fromPicture(hero, "photos.hero", {
   mobile: heroMobile,
-  objectPosition: "center 40%",
+  objectPosition: "center bottom",
+  objectPositionMobile: "center 40%",
 });
 
 const beachPhoto = fromPicture(beach, "photos.beach", {

@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section className="relative min-h-[88vh] overflow-hidden">
       <motion.div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 origin-bottom"
         initial={reduce ? false : { scale: motionProfile.kenBurns.fromScale }}
         animate={{ scale: 1 }}
         transition={{ duration: motionProfile.kenBurns.duration, ease: "linear" }}
