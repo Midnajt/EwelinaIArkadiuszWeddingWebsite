@@ -35,7 +35,7 @@ Galeria lightbox (sekcja obecnie wyłączona w `App.tsx`) używa **wszystkich 10
 
 | Plik | Zastosowanie | Źródło |
 | --- | --- | --- |
-| `images/og-image.png` | Open Graph / Twitter (1200×630) | `beach.png` — `npm exec --package=sharp -- node scripts/generate-social-images.mjs` |
+| `images/og-image.png` | Open Graph / Twitter (1200×630) | `restaurant.png` — kadr na parę i kieliszki (`node scripts/generate-og-image.mjs`) |
 | `favicon.svg` | Favicon (SVG) | monogram E&A |
 | `favicon.ico` | Favicon (legacy) | `logo_gold.png` |
 | `favicon-32x32.png` | Favicon PNG | `logo_gold.png` |
