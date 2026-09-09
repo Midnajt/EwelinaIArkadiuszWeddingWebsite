@@ -8,6 +8,10 @@ export function CountdownDays() {
   const { t } = useTranslation();
   const { phase, days } = getWeddingDateState(site.weddingDate);
 
+  if (phase !== "before") {
+    return null;
+  }
+
   return (
     <Section id="odliczanie">
       <Container>
@@ -17,7 +21,7 @@ export function CountdownDays() {
             data-slot="countdown-figure"
             className="font-heading text-primary text-6xl font-semibold md:text-8xl"
           >
-            {phase === "today" ? t("countdown.todayFigure") : days}
+            {days}
           </p>
           <p className="text-muted-foreground mt-4 text-lg">
             {t(`countdown.message.${phase}`, { count: days })}
