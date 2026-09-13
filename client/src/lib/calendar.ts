@@ -109,21 +109,6 @@ export function getGoogleCalendarUrl(language: CalendarLanguage) {
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
 
-export function getOutlookCalendarUrl(language: CalendarLanguage) {
-  const { title, description, location } = getCalendarCopy(language);
-  const params = new URLSearchParams({
-    rru: "addevent",
-    path: "/calendar/action/compose",
-    subject: title,
-    startdt: site.calendar.startsAt,
-    enddt: site.calendar.endsAt,
-    body: description,
-    location,
-  });
-
-  return `https://outlook.live.com/calendar/0/deeplink/compose?${params.toString()}`;
-}
-
 export function detectCalendarClient(): CalendarClient {
   if (typeof navigator === "undefined") {
     return { isIOS: false, isAndroid: false, isInAppBrowser: false };
@@ -156,4 +141,20 @@ export function downloadWeddingCalendar(language: CalendarLanguage) {
   link.click();
   link.remove();
   window.setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
+
+export function openWeddingCalendar(language: CalendarLanguage) {
+  const client = detectCalendarClient();
+
+  if (client.isInAppBrowser || client.isAndroid) {
+    window.location.assign(getGoogleCalendarUrl(language));
+    return;
+  }
+
+  if (client.isIOS) {
+    window.location.assign(getWeddingCalendarFileUrl(language));
+    return;
+  }
+
+  downloadWeddingCalendar(language);
 }
