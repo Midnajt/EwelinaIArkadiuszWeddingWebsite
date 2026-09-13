@@ -80,7 +80,14 @@
     "calendar": {
       "title": "Save the date",
       "text": "Add the full day — from gathering at the church until the end of the reception — to your calendar.",
-      "action": "Add to calendar"
+      "action": "Add to calendar",
+      "chooseTitle": "Choose a calendar",
+      "chooseText": "On iPhone, Apple Calendar or Google works best. On Android, use Google or the .ics file.",
+      "inAppHint": "You opened this page in Messenger or another app — a calendar file would show up as raw text. Choose Google Calendar, or open the site in Safari (⋯ → Open in Safari) and try again.",
+      "apple": "Apple Calendar",
+      "google": "Google Calendar",
+      "outlook": "Outlook",
+      "download": "Download .ics file"
     }
   },
   "countdown": {

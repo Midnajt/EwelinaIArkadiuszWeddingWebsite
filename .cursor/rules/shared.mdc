@@ -20,4 +20,4 @@ Na stronie internetowej mają się znaleźć wszystkie kluczowe informacje dotyc
 Za każdym razem gdy skończysz pracę to poniżej pod 'Ostatnie zadania:' opisz w trzech zdaniach co było zrobione. Dzięki temu łatwiej jest mi wrócić do pracy.
 
 Ostatnie zadania:
-Sekcja #odliczanie pokazuje się tylko przed weselem (faza before). W dniu ślubu i po nim komponent nic nie renderuje. Reszta strony bez zmian.
+Przycisk „Dodaj do kalendarza” otwiera wybór: Apple, Google, Outlook i plik .ics — zamiast zrzucać surowy ICS w Messengerze na iPhonie. Pliki .ics są w public/calendar z MIME text/calendar w .htaccess i Vite. W przeglądarce wbudowanej w apkę Google Calendar jest główną ścieżką; w Safari na iOS link do .ics otwiera Kalendarz Apple.

@@ -1,11 +1,11 @@
-import { Bus, Calendar, CalendarPlus, MapPinned, Phone } from "lucide-react";
+import { Bus, Calendar, MapPinned, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { site } from "@/config/site";
+import { AddToCalendar } from "@/components/AddToCalendar";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { downloadWeddingCalendar } from "@/lib/calendar";
 import { goToNavHash } from "@/lib/scroll-to-section";
 
 export function GuestEssentials() {
@@ -111,10 +111,7 @@ export function GuestEssentials() {
               <h3 className="font-heading text-xl">{t("essentials.calendar.title")}</h3>
               <p className="text-muted-foreground mt-1 max-w-2xl text-sm">{t("essentials.calendar.text")}</p>
             </div>
-            <Button onClick={() => downloadWeddingCalendar(language)} className="shrink-0">
-              <CalendarPlus />
-              {t("essentials.calendar.action")}
-            </Button>
+            <AddToCalendar language={language} />
           </CardContent>
         </Card>
       </Container>

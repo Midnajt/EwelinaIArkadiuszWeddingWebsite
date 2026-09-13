@@ -16,6 +16,8 @@ export const site = {
     endsAt: "2026-11-28T04:00:00",
     timeZone: "Europe/Warsaw",
     filename: "slub-eweliny-i-arkadiusza.ics",
+    fileUrl: "/calendar/slub-eweliny-i-arkadiusza.ics",
+    fileUrlEn: "/calendar/wedding-ewelina-arkadiusz.ics",
   },
   phone: "504 964 802",
   phoneHref: "tel:+48504964802",

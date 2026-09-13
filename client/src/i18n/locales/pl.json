@@ -80,7 +80,14 @@
     "calendar": {
       "title": "Zapisz termin",
       "text": "Dodaj cały dzień — od zbiórki przed ślubem do zakończenia wesela — do swojego kalendarza.",
-      "action": "Dodaj do kalendarza"
+      "action": "Dodaj do kalendarza",
+      "chooseTitle": "Wybierz kalendarz",
+      "chooseText": "Na iPhonie najlepiej działa Kalendarz Apple albo Google. Na Androidzie — Google albo plik .ics.",
+      "inAppHint": "Otwierasz stronę w Messengerze lub innej aplikacji — plik kalendarza pokaże się tam jako tekst. Wybierz Kalendarz Google albo otwórz stronę w Safari (⋯ → Otwórz w Safari) i spróbuj ponownie.",
+      "apple": "Kalendarz Apple",
+      "google": "Kalendarz Google",
+      "outlook": "Outlook",
+      "download": "Pobierz plik .ics"
     }
   },
   "countdown": {

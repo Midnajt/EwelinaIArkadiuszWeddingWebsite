@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AddPattern//Wedding Ewelina Arkadiusz//PL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Warsaw
+X-LIC-LOCATION:Europe/Warsaw
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261127-ewelina-arkadiusz@ewelinaiarkadiusz.pl
+DTSTAMP:20260913T200000Z
+DTSTART;TZID=Europe/Warsaw:20261127T133000
+DTEND;TZID=Europe/Warsaw:20261128T040000
+SUMMARY:Ewelina and Arkadiusz's wedding
+DESCRIPTION:13:30 — gathering at the church\n14:00 — ceremony: Church of the Immaculate Conception of the BVM\, Spytkowice 21\, 34-745 Spytkowice\n16:30 — reception: Przystań Weselna Spytkowice\, Spytkowice 625\, 34-745 Spytkowice\nCeremony map: https://maps.app.goo.gl/2DHPKjdKTAreaYsi9\nReception map: https://maps.app.goo.gl/uJu6aCugbX5ZBVrs7
+LOCATION:Spytkowice 21\, 34-745 Spytkowice / Spytkowice 625\, 34-745 Spytkowice
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

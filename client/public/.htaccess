@@ -1,3 +1,12 @@
+AddType text/calendar .ics
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.ics$">
+    Header set Content-Type "text/calendar; charset=utf-8"
+    Header set Content-Disposition "inline"
+  </FilesMatch>
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
