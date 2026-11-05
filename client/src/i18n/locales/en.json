@@ -295,6 +295,14 @@
       "title": "Microsoft account",
       "text": "To add and download photos, sign in with a Microsoft account — Outlook, Hotmail, or a work account."
     },
+    "upload": {
+      "title": "Adding photos",
+      "text": "Click “Upload” at the top of the folder and choose photos from your phone or computer. In Polish this button is “Przekaż”."
+    },
+    "download": {
+      "title": "Downloading",
+      "text": "Select a photo to the left of its name, then click “Download” at the top. In Polish this button is “Pobierz”."
+    },
     "access": {
       "title": "No access",
       "text": "If the folder is locked, OneDrive should show a “Request access” button. Send the request from there.",

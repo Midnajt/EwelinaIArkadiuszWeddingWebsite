@@ -295,6 +295,14 @@
       "title": "Konto Microsoft",
       "text": "Żeby dodawać i pobierać zdjęcia, zaloguj się kontem Microsoft — Outlook, Hotmail albo konto służbowe."
     },
+    "upload": {
+      "title": "Dodawanie",
+      "text": "Kliknij „Upload” u góry folderu i wybierz zdjęcia z telefonu albo komputera. Po polsku ten przycisk to „Przekaż”."
+    },
+    "download": {
+      "title": "Pobieranie",
+      "text": "Zaznacz zdjęcie po lewej stronie nazwy, a potem kliknij „Download” u góry. Po polsku ten przycisk to „Pobierz”."
+    },
     "access": {
       "title": "Brak dostępu",
       "text": "Gdy folder jest zamknięty, na stronie OneDrive powinien być przycisk „Poproś o dostęp”. Wyślij nim prośbę.",

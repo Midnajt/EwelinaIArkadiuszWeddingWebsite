@@ -1,4 +1,4 @@
-import { KeyRound, LockKeyhole, MessageSquare, QrCode } from "lucide-react";
+import { Download, KeyRound, LockKeyhole, MessageSquare, QrCode, Upload } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { site } from "@/config/site";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
@@ -48,6 +48,30 @@ export function AlbumHelp() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground text-sm">{t("albumHelp.account.text")}</p>
+                  </CardContent>
+                </Card>
+              </StaggerItem>
+
+              <StaggerItem hover>
+                <Card className="h-full">
+                  <CardHeader>
+                    <Upload className="text-primary size-5" aria-hidden />
+                    <CardTitle>{t("albumHelp.upload.title")}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm">{t("albumHelp.upload.text")}</p>
+                  </CardContent>
+                </Card>
+              </StaggerItem>
+
+              <StaggerItem hover>
+                <Card className="h-full">
+                  <CardHeader>
+                    <Download className="text-primary size-5" aria-hidden />
+                    <CardTitle>{t("albumHelp.download.title")}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm">{t("albumHelp.download.text")}</p>
                   </CardContent>
                 </Card>
               </StaggerItem>
