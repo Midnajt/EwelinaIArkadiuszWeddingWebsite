@@ -55,6 +55,11 @@ export function Footer() {
               </a>
             </li>
             <li>
+              <a className={linkHover} href="#zdjecia">
+                {t("nav.photos")}
+              </a>
+            </li>
+            <li>
               <a className={linkHover} href="#kontakt">
                 {t("nav.contact")}
               </a>

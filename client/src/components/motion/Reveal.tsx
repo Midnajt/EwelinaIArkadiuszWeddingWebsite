@@ -7,14 +7,16 @@ type RevealProps = {
   className?: string;
   children: ReactNode;
   delay?: number;
+  sectionHeading?: boolean;
 };
 
-export function Reveal({ className, children, delay = 0 }: RevealProps) {
+export function Reveal({ className, children, delay = 0, sectionHeading = false }: RevealProps) {
   const reduce = useReducedMotion();
 
   return (
     <motion.div
       className={className}
+      data-section-heading={sectionHeading ? "" : undefined}
       variants={motionProfile.sectionReveal}
       initial={reduce ? false : "hidden"}
       whileInView="show"

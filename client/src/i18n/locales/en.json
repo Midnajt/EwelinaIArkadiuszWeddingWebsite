@@ -5,6 +5,7 @@
     "reception": "Reception",
     "essentials": "Essentials",
     "lodging": "Stay",
+    "photos": "Photos",
     "story": "Our story",
     "schedule": "Schedule",
     "gallery": "Gallery",
@@ -273,6 +274,35 @@
     "subtitle": "Questions about the bus, rooms or seating — write to Ania or Tomek.",
     "maid": "Maid of honour",
     "bestMan": "Best man"
+  },
+  "album": {
+    "kicker": "Album",
+    "title": "Wedding photos",
+    "subtitle": "You are welcome in our shared album — a place for your photos and for the ones from other guests.",
+    "hint": "Scan the code with your camera, or tap it.",
+    "open": "Open the album",
+    "help": "Help"
+  },
+  "albumHelp": {
+    "kicker": "Album",
+    "title": "How to add and download photos",
+    "subtitle": "Below you'll find what you need.",
+    "open": {
+      "title": "Link and QR code",
+      "text": "Tapping “Open the album” or scanning the code opens the shared photo folder on OneDrive."
+    },
+    "account": {
+      "title": "Microsoft account",
+      "text": "To add and download photos, sign in with a Microsoft account — Outlook, Hotmail, or a work account."
+    },
+    "access": {
+      "title": "No access",
+      "text": "If the folder is locked, OneDrive should show a “Request access” button. Send the request from there.",
+      "fallback": "If that button is missing, send a text with your email address. The couple will add you to the folder."
+    },
+    "sms": "Text · {{name}} {{phone}}",
+    "smsBody": "Hello, please add me to the wedding photo album. My email: ",
+    "back": "Back to the home page"
   },
   "contact": {
     "kicker": "Contact",

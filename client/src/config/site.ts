@@ -83,6 +83,9 @@ export const site = {
     seats: 9,
     from: "15:00",
   },
+  photos: {
+    url: "https://strzezek-my.sharepoint.com/personal/astrzezek_strzezek_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fastrzezek%5Fstrzezek%5Fcom%2FDocuments%2FEwelinaiArkadiusz2026&ga=1",
+  },
   witnesses: [
     {
       id: "maid",

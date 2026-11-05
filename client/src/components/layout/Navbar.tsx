@@ -12,6 +12,7 @@ const LINKS = [
   { href: "#wesele", key: "nav.reception" },
   { href: "#niezbednik", key: "nav.essentials" },
   { href: "#nocleg", key: "nav.lodging" },
+  { href: "#zdjecia", key: "nav.photos" },
   // { href: "#historia", key: "nav.story" },
   // { href: "#plan", key: "nav.schedule" },
   // { href: "#galeria", key: "nav.gallery" },

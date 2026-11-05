@@ -20,4 +20,4 @@ Na stronie internetowej mają się znaleźć wszystkie kluczowe informacje dotyc
 Za każdym razem gdy skończysz pracę to poniżej pod 'Ostatnie zadania:' opisz w trzech zdaniach co było zrobione. Dzięki temu łatwiej jest mi wrócić do pracy.
 
 Ostatnie zadania:
-Przycisk „Dodaj do kalendarza” sam rozpoznaje urządzenie: Safari na iPhonie otwiera .ics (Apple), Messenger/Android idą do Kalendarza Google, komputer pobiera plik. Dialog wyboru został usunięty. Pliki .ics i MIME bez zmian.
+Pod kodem QR jest teraz „Zeskanuj kod aparatem albo kliknij go.” zamiast formy „zeskanujcie / kliknijcie”. Reszta sekcji zdjęć została bez zmian. Angielski podpis już był w formie do jednej osoby.

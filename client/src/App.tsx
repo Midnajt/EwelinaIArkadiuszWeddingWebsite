@@ -6,6 +6,8 @@ import { EventCards } from "@/components/sections/EventCards";
 import { GuestEssentials } from "@/components/sections/GuestEssentials";
 import { Lodging } from "@/components/sections/Lodging";
 import { CountdownDays } from "@/components/sections/CountdownDays";
+import { PhotoAlbum } from "@/components/sections/PhotoAlbum";
+import { AlbumHelp } from "@/components/sections/AlbumHelp";
 // import { LoveStory } from "@/components/sections/LoveStory";
 // import { Slider } from "@/components/sections/Slider";
 // import { DayTimeline } from "@/components/sections/DayTimeline";
@@ -32,6 +34,7 @@ function HomePage() {
       <GuestEssentials />
       <Lodging />
       <CountdownDays />
+      <PhotoAlbum />
       {/* <LoveStory /> */}
       {/* <Slider /> */}
       {/* <DayTimeline /> */}
@@ -64,7 +67,15 @@ export default function App() {
       <div className="sticky top-0 z-40">
         <Navbar />
       </div>
-      {view === "rodo" ? <RodoPage /> : view === "privacy" ? <PrivacyPage /> : <HomePage />}
+      {view === "rodo" ? (
+        <RodoPage />
+      ) : view === "privacy" ? (
+        <PrivacyPage />
+      ) : view === "album" ? (
+        <AlbumHelp />
+      ) : (
+        <HomePage />
+      )}
       <Footer />
       {/* <PartnersFab /> */}
       <CookieBanner />

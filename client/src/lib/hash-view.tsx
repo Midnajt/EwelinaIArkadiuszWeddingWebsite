@@ -8,7 +8,7 @@ import {
 } from "react";
 import { scrollToNavHash } from "@/lib/scroll-to-section";
 
-export type AppView = "home" | "rodo" | "privacy";
+export type AppView = "home" | "rodo" | "privacy" | "album";
 
 type HashContextValue = {
   view: AppView;
@@ -26,6 +26,7 @@ function parseHash(hash: string): HashContextValue {
   if (raw === "/polityka" || raw === "polityka" || raw === "/privacy") {
     return { view: "privacy", section: null };
   }
+  if (raw === "/album" || raw === "album") return { view: "album", section: null };
   return { view: "home", section: raw || null };
 }
 

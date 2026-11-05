@@ -46,7 +46,7 @@ export function SectionHeader({
   ornament?: boolean;
 }) {
   return (
-    <Reveal className="mx-auto mb-10 max-w-2xl text-center">
+    <Reveal className="mx-auto mb-10 max-w-2xl text-center" sectionHeading>
       <p className="text-sm font-medium tracking-widest text-primary uppercase">{kicker}</p>
       <h2 className="mt-2 text-3xl leading-tight md:text-4xl">{title}</h2>
       {subtitle ? (

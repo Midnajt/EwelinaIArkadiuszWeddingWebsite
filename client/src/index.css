@@ -97,6 +97,17 @@
       var(--background) 100%
     );
   }
+
+  /* Album band: one step darker than the page cream, still fading into neighbors. */
+  .bg-album-band {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 0%,
+      color-mix(in srgb, var(--foreground) 6%, var(--muted)) 16%,
+      color-mix(in srgb, var(--foreground) 6%, var(--muted)) 84%,
+      var(--background) 100%
+    );
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

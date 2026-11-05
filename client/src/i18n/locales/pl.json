@@ -5,6 +5,7 @@
     "reception": "Wesele",
     "essentials": "Niezbędnik",
     "lodging": "Nocleg",
+    "photos": "Zdjęcia",
     "story": "Historia",
     "schedule": "Plan dnia",
     "gallery": "Galeria",
@@ -273,6 +274,35 @@
     "subtitle": "W razie pytań o bus, nocleg albo rozsady — piszcie do Ani albo Tomka.",
     "maid": "Świadkowa",
     "bestMan": "Świadek"
+  },
+  "album": {
+    "kicker": "Album",
+    "title": "Zdjęcia z wesela",
+    "subtitle": "Zapraszamy do wspólnego albumu — można tu zostawić swoje zdjęcia i obejrzeć te od innych gości.",
+    "hint": "Zeskanuj kod aparatem albo kliknij go.",
+    "open": "Otwórz album",
+    "help": "Pomoc"
+  },
+  "albumHelp": {
+    "kicker": "Album",
+    "title": "Jak dodać i pobrać zdjęcia",
+    "subtitle": "Poniżej znajdziesz informację, co jest potrzebne.",
+    "open": {
+      "title": "Link i kod QR",
+      "text": "Kliknięcie „Otwórz album” albo zeskanowanie kodu otwiera wspólny folder zdjęć na OneDrive."
+    },
+    "account": {
+      "title": "Konto Microsoft",
+      "text": "Żeby dodawać i pobierać zdjęcia, zaloguj się kontem Microsoft — Outlook, Hotmail albo konto służbowe."
+    },
+    "access": {
+      "title": "Brak dostępu",
+      "text": "Gdy folder jest zamknięty, na stronie OneDrive powinien być przycisk „Poproś o dostęp”. Wyślij nim prośbę.",
+      "fallback": "Jeśli tego przycisku nie ma, wyślij SMS ze swoim adresem e-mail. Para Młoda doda Cię do folderu."
+    },
+    "sms": "SMS · {{name}} {{phone}}",
+    "smsBody": "Dzień dobry, proszę o dostęp do albumu weselnego. Mój adres e-mail: ",
+    "back": "Powrót do strony głównej"
   },
   "contact": {
     "kicker": "Kontakt",
