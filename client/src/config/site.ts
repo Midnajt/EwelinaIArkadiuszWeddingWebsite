@@ -69,9 +69,14 @@ export const site = {
     distanceKm: 10,
     driveMinutes: 13,
     checkIn: "16:00",
-    checkOut: "15:00",
-    breakfastFrom: "7:30",
-    breakfastTo: "11:00",
+    checkOut: {
+      saturday: "15:00",
+      other: "11:00",
+    },
+    breakfast: {
+      weekend: { from: "7:30", to: "11:00" },
+      other: { from: "7:30", to: "10:00" },
+    },
     manager: {
       name: "Ewa Pilch",
       phone: "600 309 929",

@@ -27,9 +27,16 @@ export function Lodging() {
             <p className="flex gap-3">
               <UtensilsCrossed className="text-primary mt-0.5 size-5 shrink-0" />
               <span>
-                {t("essentials.stay.breakfast", {
-                  from: lodging.breakfastFrom,
-                  to: lodging.breakfastTo,
+                {t("essentials.stay.breakfastIncluded")}
+                <br />
+                {t("essentials.stay.breakfastWeekend", {
+                  from: lodging.breakfast.weekend.from,
+                  to: lodging.breakfast.weekend.to,
+                })}
+                <br />
+                {t("essentials.stay.breakfastOther", {
+                  from: lodging.breakfast.other.from,
+                  to: lodging.breakfast.other.to,
                 })}
               </span>
             </p>
@@ -46,7 +53,9 @@ export function Lodging() {
               <span>
                 <span className="font-medium">{t("essentials.stay.checkOutLabel")}</span>
                 <br />
-                {t("essentials.stay.checkOut")}
+                {t("essentials.stay.checkOutSaturday", { time: lodging.checkOut.saturday })}
+                <br />
+                {t("essentials.stay.checkOutOther", { time: lodging.checkOut.other })}
               </span>
             </p>
             <p className="flex gap-3">
